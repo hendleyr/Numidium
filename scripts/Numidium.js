@@ -57,7 +57,7 @@ function init()
 	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
 	floor.position.y = -0.5;
 	floor.rotation.x = Math.PI / 2;
-	scene.add(floor);
+	//scene.add(floor);
 	// SKYBOX/FOG
 	var skyBoxGeometry = new THREE.CubeGeometry( 10000, 10000, 10000 );
 	var skyBoxMaterial = new THREE.MeshBasicMaterial( { color: 0x9999ff, side: THREE.BackSide } );
@@ -65,16 +65,37 @@ function init()
 	scene.add(skyBox);
 	scene.fog = new THREE.FogExp2( 0x9999ff, 0.00075 );
 	
-	var jsonLoader = new THREE.JSONLoader();
-	jsonLoader.load( "models/lighthouse.js", addModelToScene );
+	//var jsonLoader = new THREE.JSONLoader();
+	//jsonLoader.load( "models/lighthouse/lighthouse.js", addModelToScene );
+	var manager = new THREE.LoadingManager();
+				manager.onProgress = function ( item, loaded, total ) {
+
+					console.log( item, loaded, total );
+
+				};
 	
-	var ambientLight = new THREE.AmbientLight(0x111111);
+	//var loader = new THREE.OBJMTLLoader();
+	//			loader.load( 'models/medieval_city/medieval_city.obj', 'models/medieval_city/medieval_city.mtl', function ( object ) {
+	//				//object.position.y = - 80;			object.scale = new THREE.Vector3( 10, 10, 10 );
+	//				scene.add( object );
+	//			} );
+				
+	var loader = new THREE.OBJLoader( manager );
+	loader.load( 'models/medieval_city/medieval_city.obj', function ( object ) {
+		object.scale = new THREE.Vector3( 10, 10, 10 );
+		object.position.y = - 80;
+		scene.add( object );
+	});
+
+
+	
+	var ambientLight = new THREE.AmbientLight(0xFF1111);
 	scene.add(ambientLight);
 }
 
 function addModelToScene( geometry, materials ) 
 {
-	var material = new THREE.MeshFaceMaterial( materials );
+	var material = new THREE.MeshBasicMaterial( materials );
 	lighthouse = new THREE.Mesh( geometry, material );
 	lighthouse.scale.set(10,10,10);
 	scene.add( lighthouse );

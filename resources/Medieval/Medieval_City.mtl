@@ -1,0 +1,4799 @@
+newmtl ShuttersMoved_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_high_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_124
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_20
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_53
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_115
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_119
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_139
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_25
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_83
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_77
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_123
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_127
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_73
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_26
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BalconyRailingSurface_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/balconyRailing_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_69
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_46
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_55
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_78
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_141
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_72
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_64
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_76
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_118
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_58
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_63
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_60
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_74
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_50
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BalconyRailingSurface_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/balconyRailing_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_114
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_65
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_48
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_57
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_117
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_140
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_27
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_52
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_66
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_75
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_81
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_68
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_49
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_67
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_61
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_47
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_85
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_59
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_116
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_71
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_79
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_138
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_70
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_54
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_120
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_24
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_84
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_82
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_9
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_157
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_93
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_143
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_155
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_Gate_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/gate_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_106
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_159
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_111
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_94
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_91
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_110
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_31
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_144
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_148
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_162
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_112
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl lambert444SG
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/bench_3_v1.tif
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_152
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_96
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_33
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_34
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_87
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_40
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_146
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_88
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_142
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_99
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_100
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_89
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_154
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_38
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_103
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_164
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_37
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_29
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_11.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_36
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_90
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_35
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_95
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_113
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_32
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_109
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_163
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_Gate_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/gate_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_92
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_39
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_160
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_156
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_104
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_105
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_145
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_101
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_149
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Green
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/field_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_26
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v3.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_97
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutTrees2_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_7_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Green_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/field_4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_28
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Green_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/field_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutTrees
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_6_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl VeggieFieldTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/veggieField_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl lambert2SG
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/woodHackTex.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_8
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutTrees2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_8_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_22
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v4.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_1.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_VeggieFieldTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/veggieField_5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_108
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_26
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_56
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_62
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_28
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v10.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_102
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_31
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_24
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v8.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_27
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_80
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_VeggieFieldTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/veggieField_4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_29
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v9.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_51
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_27
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v2.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_VeggieFieldTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/veggieField_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_39
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_107
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_30
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v1.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_25
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v7.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_98
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl CityEngineMaterial
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_23
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v6.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_28
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl CourtYardTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/courtyard_floor_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl CourtYardTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/courtyard_floor_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutTrees_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_3_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_34
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_135
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_133
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_Green
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/field_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_PutTrees2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_4_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutStreetFurnitureAsset
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chicken_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SidewalkStoneTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stoneColor.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_2
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_3
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BlockTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sandstone_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SidewalkMainTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/StoneFloor_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl CourtYardTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/courtyard_floor_4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutStreetFurnitureAsset_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chicken_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BlockTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sandstone_5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_1
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl landscape_PutTrees2_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/alleyTree_5_v1.tif
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl CourtYardTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/courtyard_floor_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutStreetFurnitureAsset_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chicken_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_158
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_161
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_Gate_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/gate_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl lambert448SG
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/bench_4_v1.tif
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_14.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_12.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_11.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BalconyRailingSurface
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/balconyRailing_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_4.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_11.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl initialShadingGroup1
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/horsePole.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl initialShadingGroup
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/barrelTex.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_6.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_5.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_15.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl StoneStepTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/StoneFloor_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_3.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_2.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BlockTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sandstone_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_3.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WindowLowLODTexturing_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/winFrame_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl lambert441SG
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/bench_2_v1.tif
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BlockTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sandstone_4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl BlockTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sandstone_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_1.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_high_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_13.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_11.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v9.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_FlatRoofTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/flatRoof_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Street
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/courtyard_floor_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Sidewalk
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/rock_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_5
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_7
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutStreetFurnitureAsset_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chicken_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_23
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_25
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_19
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing_2
+    illum 4
+    Ks 0.5 0.5 0.5
+    Ns 18
+    map_Kd texture/OuterWallTexture_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_24
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_21
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_4
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_22
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_ChimneyTexturing_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chimneyTex_v4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutStreetFurnitureAsset_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/chicken_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_20
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallHorizontalTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallHorizontalTexturing_1
+    illum 4
+    Ks 0.5 0.5 0.5
+    Ns 18
+    map_Kd texture/OuterWallTexture_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PlaceLampAsset_6
+    illum 4
+    Ks 0.3 0.3 0.3
+    Ns 1
+    map_Kd texture/streetLamp_8.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl StoneStepTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/StoneFloor_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_high_1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_plankTexturing_PlankTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_plankTexturing_PlankTexturing_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v1.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl PutSignOrLamp_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/sign_2.png
+    Kd 1 1 1
+    d 0.99
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_plankTexturing_PlankTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_Gate
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/gate_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_plankTexturing_PlankTexturing
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_150
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_1.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_128
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_125
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallHorizontalTexturing_2
+    illum 4
+    Ks 0.5 0.5 0.5
+    Ns 18
+    map_Kd texture/OuterWallTexture_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v1.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_20
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v2.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_153
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v5.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_12
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v6.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_134
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_129
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_147
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v7.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_3.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_45
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing_3
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_29
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_8
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_19
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_121
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_4_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_132
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_2_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_7
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_42
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_15
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v3.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v9.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_130
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_8.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_122
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_38
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_23
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_6
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_5.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_17
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_126
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_32
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v4.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_33
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_44
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_37
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_7.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_36
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_21
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_3_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_30
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_13
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_137
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_131
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_1_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_19
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_10.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_151
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_high_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_4.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_21
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v10.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_136
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_3_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Door_16
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_4.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_9
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_low_11.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_10
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plankTop_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_6.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_19
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_nailed_v8.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_22
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_86
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_high_2_v2.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_RoofSurface_20
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/roofType_2_v2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl GuardDoor_5
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/door_low_3.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_40
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_43
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_41
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl OuterWallVerticalTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/OuterWallTexture_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_35
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/plaster_low_1_v4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl LotAligned
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/rock_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl VeggieFieldTexturing_1
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/veggieField_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl WallSegmentTexturing_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Chipped
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Chipped.bmp
+    Kd 0.655482 0.542562 0.439764
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_167
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_4_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_14
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_high_6.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl raehmli_2
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/frameTexture_2.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_172
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_173
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v5.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl raehmli_1
+    illum 4
+    Ks 0.5 0.5 0.5
+    Ns 18
+    map_Kd texture/frameTexture_2.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_171
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_166
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_2_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_174
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_2_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_14
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_13.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_51
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_7.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_19
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_15.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_16
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_14.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_15
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_19.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_17
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_4.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_12
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_11.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_18
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_8.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_13
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_3.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl ShuttersMoved_11
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/shutter_high_5.png
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_43
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_10.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_47
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_42
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_9.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_41
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_11.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_170
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_168
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_1_v3.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_165
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_low_3_v4.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_46
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_44
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_6.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_11
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_18.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl SideOrnament_18
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/stone_high_4_v3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_10
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_12.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_175
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v5.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_7
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_5.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_9
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_10.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_6
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_2.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_5
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_7.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_4
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_17.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_8
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_1.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_3
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_9.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_2
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_16.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli_1
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_6.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl raehmli
+    illum 4
+    Ks 0.5 0.5 0.5
+    Ns 18
+    map_Kd texture/frameTexture_1.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl glesli
+    illum 4
+    Ks 3 3 3
+    Ns 20
+    map_Kd texture/interior_20.png
+    Kd 1 1 1
+    d 0.9
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_176
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/wood_low_1_v1.jpg
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl Wall_169
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/framework_low_3_v1.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl roofs_plankTexturing_PlankTexturing_4
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/Plank_v5.png
+    Kd 0.5 0.5 0.5
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_50
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_3.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_49
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_2.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_48
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_8.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
+newmtl plankTexturing_PlankTexturing_45
+    illum 3
+    Ks 0 0 0
+    Ns 0
+    map_Kd texture/constr_plank_low_4.jpg
+    Kd 1 1 1
+    d 1
+    Ka 0 0 0
+    Tf 1.0 1.0 1.0
+    Ni 1.0
