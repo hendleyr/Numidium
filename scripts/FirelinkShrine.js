@@ -2,7 +2,7 @@
 // need a new strategy for loading in IE... require.js?
 // enable webgl in firefox; use latest nightly build for very slight perf. increase...
 // standard global variables
-var container, scene, camera, renderer, controls, stats;
+var container, scene, camera, renderer, controls, stats, ray, collisionMesh;
 var clock = new THREE.Clock();
 
 init();
@@ -19,8 +19,10 @@ function init()
 	var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 1, FAR = 20000;
 	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 	scene.add(camera);
-	camera.position.set(0,150,400);
-	camera.lookAt(scene.position);
+	camera.position.set(872,-162,-261);
+	
+	camera.lookAt(scene.position);	
+	ray = new THREE.Raycaster(camera.position, new THREE.Vector3(0, -1, 0), 0, 10);
 	
 	// RENDERER
 	if ( Detector.webgl ) {
@@ -75,6 +77,7 @@ function init()
 		 object.scale = new THREE.Vector3( 10, 10, 10 );
 		 object.position.y = - 80;
 		 scene.add( object );
+		 collisionMesh = object;
 		 document.getElementById("loadingScreen").style.display = "none";
 	 });
 	
@@ -86,18 +89,25 @@ function init()
 function animate() 
 {
 	requestAnimationFrame( animate );
-	render();		
+	render();
 	update();
-}
-
-function update()
-{
-	//listen for keyboard/HMD/mouse controls
-	stats.update();
 }
 
 function render() 
 {
 	controls.update( clock.getDelta() );
 	renderer.render( scene, camera );
+}
+
+function update()
+{
+	//listen for keyboard/HMD/mouse controls
+	
+	// gravity calc
+	if (collisionMesh && ray.intersectObject(collisionMesh, true).length === 0) {
+		camera.position.y -= 1;
+	}
+	//console.log(camera.position);
+	
+	stats.update();
 }
