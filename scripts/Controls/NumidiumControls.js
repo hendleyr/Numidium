@@ -1,10 +1,12 @@
 /**
  * @author mrdoob / http://mrdoob.com/
+ * @edited by Thomas Grelecki, Derek Isson, Richard Hendley, Ger Her
  */
 
 THREE.PointerLockControls = function ( camera ) {
-
 	var scope = this;
+	var collisionMesh;	// set in loading callback
+	this.ray = new THREE.Raycaster(camera.position, new THREE.Vector3(0, -1, 0), 0, 10);
 
 	camera.rotation.set( 0, 0, 0 );
 
@@ -65,7 +67,7 @@ THREE.PointerLockControls = function ( camera ) {
 				break;
 
 			case 32: // space
-				if ( canJump === true ) velocity.y += 10;
+				if ( canJump === true ) velocity.y += 3;	// jump velocity
 				canJump = false;
 				break;
 
@@ -96,7 +98,6 @@ THREE.PointerLockControls = function ( camera ) {
 			case 68: // d
 				moveRight = false;
 				break;
-
 		}
 
 	};
@@ -108,9 +109,7 @@ THREE.PointerLockControls = function ( camera ) {
 	this.enabled = false;
 
 	this.getObject = function () {
-
 		return yawObject;
-
 	};
 
 	this.isOnObject = function ( boolean ) {
@@ -149,6 +148,7 @@ THREE.PointerLockControls = function ( camera ) {
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
 
 		velocity.y -= 0.25 * delta;
+		velocity.y = Math.max(velocity.y, -2);
 
 		if ( moveForward ) velocity.z -= 0.12 * delta;
 		if ( moveBackward ) velocity.z += 0.12 * delta;
@@ -157,24 +157,39 @@ THREE.PointerLockControls = function ( camera ) {
 		if ( moveRight ) velocity.x += 0.12 * delta;
 
 		if ( isOnObject === true ) {
-
 			velocity.y = Math.max( 0, velocity.y );
-
 		}
 
 		yawObject.translateX( velocity.x );
-		yawObject.translateY( velocity.y ); 
+		yawObject.translateY( velocity.y );
 		yawObject.translateZ( velocity.z );
+		
+		this.ray.ray.origin = yawObject.position;
+		
+		if (this.collisionMesh) {
+			// gravity; check for collision in -Y direction
+			var intersections = this.ray.intersectObject(this.collisionMesh, true);
+			if ( intersections.length > 0 ) {
+				console.log("found intersect");
+				var distance = intersections[ 0 ].distance;
 
-		if ( yawObject.position.y < 10 ) {
+				if ( distance > 0 && distance < 10 ) {	// camera height=10
+					velocity.y = 0;
 
-			velocity.y = 0;
-			yawObject.position.y = 10;
-
-			canJump = true;
-
+					canJump = true;
+					isOnObject = true;
+				}
+			}
+			else {
+				yawObject.translateX( velocity.x );
+				yawObject.translateY( velocity.y );
+				yawObject.translateZ( velocity.z );
+				
+				canJump = false;
+				isOnObject = false;
+			}
+			
+			//TODO: check for lateral collisions, clipping through sloped terrain
 		}
-
 	};
-
 };
