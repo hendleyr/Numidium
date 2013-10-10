@@ -3,10 +3,10 @@
  * @edited by Thomas Grelecki, Derek Isson, Richard Hendley, Ger Her
  */
 
-THREE.PointerLockControls = function ( camera ) {
+NUMIDIUM.PointerLockControls = function ( camera ) {
 	var scope = this;
 	var collisionMesh;	// set in loading callback
-	this.ray = new THREE.Raycaster(camera.position, new THREE.Vector3(0, -1, 0), 0, 10);
+	var ray = new THREE.Raycaster(camera.position, new THREE.Vector3(0, -1, 0), 0, 10);
 
 	camera.rotation.set( 0, 0, 0 );
 
@@ -164,11 +164,11 @@ THREE.PointerLockControls = function ( camera ) {
 		yawObject.translateY( velocity.y );
 		yawObject.translateZ( velocity.z );
 		
-		this.ray.ray.origin = yawObject.position;
+		ray.ray.origin = yawObject.position;
 		
 		if (this.collisionMesh) {
 			// gravity; check for collision in -Y direction
-			var intersections = this.ray.intersectObject(this.collisionMesh, true);
+			var intersections = ray.intersectObject(this.collisionMesh, true);
 			if ( intersections.length > 0 ) {
 				console.log("found intersect");
 				var distance = intersections[ 0 ].distance;
