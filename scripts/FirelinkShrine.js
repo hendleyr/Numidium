@@ -126,13 +126,13 @@ function animate()
 function render() 
 {
 	viewController.render(scene);
-	sceneGraph.update();
 }
 
 function update()
 {
 	//listen for keyboard/HMD/mouse controls
 	//controls.update( clock.getDelta() );
-	controls.update( Date.now() - time );	
+	controls.update( Date.now() - time );
+	sceneGraph.update();	
 	stats.update();
 }

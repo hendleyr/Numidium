@@ -36,7 +36,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var PI_2 = Math.PI / 2;
 
 	var onMouseMove = function ( event ) {
-
+		console.log("moving mouse...");
 		if ( scope.enabled === false ) return;
 
 		var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
@@ -202,6 +202,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			// translate x & z, then see if we've made a valid move up or down
 			lookAhead.translateX(velocity.x);
 			lookAhead.translateZ(velocity.z);
+			
 			// look down -- are we stepping up/down, falling up/down, or over an abyss?
 			yRaycaster.ray.origin = lookAhead.position;
 			sceneGraphObjects = this.sceneGraph.search( yRaycaster.ray.origin, 256, true, yRaycaster.ray.direction );
@@ -209,9 +210,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			if ( intersections.length > 0 ) {
 				var distance = intersections[0].distance;
 				if (intersections[1]) console.log(intersections[1]);
-				//console.log("distance: " + distance +", jump: " + canJump);
 				if (distance - playerHeight <= stepHeight && canJump) {
-					//console.log("We're stepping...");
 					velocity.y = 0;
 					yawObject.position.y = intersections[0].point.y + playerHeight;
 					canJump = true;

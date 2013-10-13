@@ -19,7 +19,7 @@ NUMIDIUM.ViewController = function () {
 			renderer = new THREE.CanvasRenderer();
 		}
 		
-		oculusRenderer = new THREE.OculusRiftEffect( renderer, {worldFactor: 1} );
+		oculusRenderer = new THREE.OculusRiftEffect( renderer, camera, {worldFactor: 1} );
 		//anaglyphRenderer = new 
 		
 		renderer.setSize(window.innerWidth, window.innerHeight);
@@ -29,7 +29,7 @@ NUMIDIUM.ViewController = function () {
 		
 	this.getCamera = function () {
 		return camera;
-	};	
+	};
 	this.getRenderer = function () {
 		if (isAnaglyph) {
 			return anaglyphRenderer;
