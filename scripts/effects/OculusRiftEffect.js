@@ -1,5 +1,6 @@
 /**
  * @author troffmo5 / http://github.com/troffmo5
+ * @edited by Thomas Grelecki, Derek Isson, Richard Hendley, Ger Her
  *
  * Effect to render the scene in stereo 3d side by side with lens distortion.
  * It is written to be used with the Oculus Rift (http://www.oculusvr.com/) but
@@ -25,7 +26,6 @@ THREE.OculusRiftEffect = function ( renderer, camera, options ) {
 	};
 
 	// Perspective camera
-	//var pCamera = new THREE.PerspectiveCamera();
 	var pCamera = camera;
 	pCamera.matrixAutoUpdate = false;
 	pCamera.target = new THREE.Vector3();
