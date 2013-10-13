@@ -12,7 +12,23 @@ function init()
 {
 	// SCENE
 	scene = new THREE.Scene();
+	sceneGraph = new THREE.Octree( {
+		// uncomment below to see the octree (may kill the fps)
+		//scene: scene,
+		// when undeferred = true, objects are inserted immediately
+		// instead of being deferred until next octree.update() call
+		// this may decrease performance as it forces a matrix update
+		undeferred: true,
+		// set the max depth of tree
+		depthMax: Infinity,
+		// max number of objects before nodes split or merge
+		objectsThreshold: 512,
+		// percent between 0 and 1 that nodes will overlap each other
+		// helps insert objects that lie over more than one node
+		overlapPct: 0.25
+	} );
 	
+	// RENDERER
 	viewController =  new NUMIDIUM.ViewController();
 	container = document.body;
 	container.appendChild(viewController.getRenderer().domElement);
@@ -21,7 +37,7 @@ function init()
 	//fullscreen, oculus enable, audio mute, IPD adjust, quality adjusts
 	
 	// CONTROLS
-	controls = new NUMIDIUM.PointerLockControls(viewController.getCamera());
+	controls = new NUMIDIUM.NumidiumControls(viewController.getCamera());
 	controls.getObject().position.set(872,-82,-261);
 	scene.add( controls.getObject() );
 	
@@ -65,12 +81,23 @@ function init()
 	 var loader = new THREE.OBJLoader( manager );
 	 loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
 		collisionMesh = object;
-		controls.collisionMesh = collisionMesh;
+		controls.sceneGraph = sceneGraph;
 		collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
-		//collisionMesh.castShadow = true;
-		//collisionMesh.receiveShadow = true;
 		scene.add( collisionMesh );
-		 
+		sceneGraph.add(collisionMesh.children[0].children[0], { useFaces: true });	// add mesh
+		controls.sceneGraph = sceneGraph;
+			
+		// sceneGraph details to console		
+		//console.log( ' ============================================================================================================');
+		//console.log( ' SCENE GRAPH: ', sceneGraph );
+		//console.log( ' ... depth ', sceneGraph.depth, ' vs depth end?', sceneGraph.depthEnd() );
+		//console.log( ' ... num nodes: ', sceneGraph.nodeCountEnd() );
+		//console.log( ' ... total objects: ', sceneGraph.objectCountEnd(), ' vs tree objects length: ', sceneGraph.objects.length );
+		//console.log( ' ============================================================================================================');
+		//console.log( ' ');		
+		// print full sceneGraph structure to console		
+		//sceneGraph.toConsole();
+				 
 		document.getElementById("loadingScreen").style.display = "none";
 	 });
 	
@@ -99,6 +126,7 @@ function animate()
 function render() 
 {
 	viewController.render(scene);
+	sceneGraph.update();
 }
 
 function update()
