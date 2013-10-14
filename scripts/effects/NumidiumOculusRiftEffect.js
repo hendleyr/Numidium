@@ -6,7 +6,7 @@
  * it works also with other HMD using the same technology
  */
 
-THREE.OculusRiftEffect = function ( renderer, options ) {
+THREE.OculusRiftEffect = function ( renderer, camera, options ) {
 	// worldFactor indicates how many units is 1 meter
 	var worldFactor = (options && options.worldFactor) ? options.worldFactor: 1.0;
 
@@ -25,7 +25,8 @@ THREE.OculusRiftEffect = function ( renderer, options ) {
 	};
 
 	// Perspective camera
-	var pCamera = new THREE.PerspectiveCamera();
+	//var pCamera = new THREE.PerspectiveCamera();
+	var pCamera = camera;
 	pCamera.matrixAutoUpdate = false;
 	pCamera.target = new THREE.Vector3();
 

@@ -20,7 +20,8 @@ NUMIDIUM.ViewController = function () {
 		}
 		
 		oculusRenderer = new THREE.OculusRiftEffect( renderer, camera, {worldFactor: 1} );
-		//anaglyphRenderer = new 
+		anaglyphRenderer = new THREE.AnaglyphEffect(  renderer, window.innerWidth, window.innerHeight );
+
 		
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		document.addEventListener( 'keydown', onKeyDown, false );
@@ -42,15 +43,6 @@ NUMIDIUM.ViewController = function () {
 		}
 	};
 	
-	// this.setAnaglyph = function () {
-		// isAnaglyph = true;
-		// isOculus = false;		
-	// };
-	// this.setOculus = function () {
-		// isAnaglyph = false;
-		// isOculus = true;		
-	// };
-	
 	this.render = function (scene) {
 		if (isAnaglyph) {
 			anaglyphRenderer.render(scene, camera);
@@ -68,7 +60,7 @@ NUMIDIUM.ViewController = function () {
 		camera.updateProjectionMatrix();
 
 		renderer.setSize(window.innerWidth, window.innerHeight);
-		//anaglyphRenderer.setSize(window.innerWidth, window.innerHeight);
+		anaglyphRenderer.setSize(window.innerWidth, window.innerHeight);
 		oculusRenderer.setSize(window.innerWidth, window.innerHeight);
 	};
 	
