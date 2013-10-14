@@ -70,14 +70,17 @@ NUMIDIUM.ViewController = function () {
 			case 73:	//i
 				isAnaglyph = true;
 				isOculus = false;
+                onWindowResize();
 				break;
 			case 79:	//o
 				isAnaglyph = false;
 				isOculus = true;
+                onWindowResize();
 				break;
 			case 80:	//p
 				isAnaglyph = false;
 				isOculus = false;
+                onWindowResize();
 				break;
 		}
 	};
