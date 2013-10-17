@@ -1,6 +1,6 @@
 // MAIN
-var container, scene, controls, stats, collisionMesh;
-var viewController;
+var container, scene, stats, collisionMesh;
+var kbamControls, oculusControls, viewController;
 var clock = new THREE.Clock();
 var time = Date.now();
 
@@ -14,7 +14,7 @@ function init()
 	scene = new THREE.Scene();
 	sceneGraph = new THREE.Octree( {
 		// uncomment below to see the octree (may kill the fps)
-		//scene: scene,
+		// scene: scene,
 		// when undeferred = true, objects are inserted immediately
 		// instead of being deferred until next octree.update() call
 		// this may decrease performance as it forces a matrix update
@@ -35,11 +35,19 @@ function init()
 	
 	// EVENTS
 	//fullscreen, oculus enable, audio mute, IPD adjust, quality adjusts
+	document.addEventListener( 'keydown', function (event) {
+		switch (event.keyCode) {
+			case 67:	//c
+			oculusControls.connect();	// send a GET to http://localhost:50000/
+			break;
+		}
+	}, false );
 	
 	// CONTROLS
-	controls = new NUMIDIUM.NumidiumControls(viewController.getCamera());
-	controls.getObject().position.set(872,-82,-261);
-	scene.add( controls.getObject() );
+	kbamControls = new NUMIDIUM.NumidiumControls(viewController.getCamera());
+	kbamControls.getObject().position.set(872,-82,-261);
+	oculusControls = new THREE.OculusControls(viewController.getCamera());
+	scene.add( kbamControls.getObject() );
 	
 	// STATS
 	stats = new Stats();
@@ -81,23 +89,11 @@ function init()
 	 var loader = new THREE.OBJLoader( manager );
 	 loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
 		collisionMesh = object;
-		controls.sceneGraph = sceneGraph;
+		kbamControls.sceneGraph = sceneGraph;
 		collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
 		scene.add( collisionMesh );
 		sceneGraph.add(collisionMesh.children[0].children[0], { useFaces: true });	// add mesh
-		controls.sceneGraph = sceneGraph;
-			
-		// sceneGraph details to console		
-		//console.log( ' ============================================================================================================');
-		//console.log( ' SCENE GRAPH: ', sceneGraph );
-		//console.log( ' ... depth ', sceneGraph.depth, ' vs depth end?', sceneGraph.depthEnd() );
-		//console.log( ' ... num nodes: ', sceneGraph.nodeCountEnd() );
-		//console.log( ' ... total objects: ', sceneGraph.objectCountEnd(), ' vs tree objects length: ', sceneGraph.objects.length );
-		//console.log( ' ============================================================================================================');
-		//console.log( ' ');		
-		// print full sceneGraph structure to console		
-		//sceneGraph.toConsole();
-				 
+		kbamControls.sceneGraph = sceneGraph;				 
 		document.getElementById("loadingScreen").style.display = "none";
 	 });
 	
@@ -131,8 +127,10 @@ function render()
 function update()
 {
 	//listen for keyboard/HMD/mouse controls
-	//controls.update( clock.getDelta() );
-	controls.update( Date.now() - time );
+	kbamControls.update( Date.now() - time ); //TODO: tweak values so clock delta can be used instead
+	oculusControls.update(clock.getDelta());
+	//TODO: gamepad controls also updating
+	
 	sceneGraph.update();	
 	stats.update();
 }

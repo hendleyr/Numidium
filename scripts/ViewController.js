@@ -65,7 +65,6 @@ NUMIDIUM.ViewController = function () {
 	};
 	
 	onKeyDown = function (event) {
-		//console.log("hit key #" + event.keyCode);
 		switch (event.keyCode) {
 			case 73:	//i
 				isAnaglyph = true;

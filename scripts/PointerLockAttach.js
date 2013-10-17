@@ -13,13 +13,13 @@ if ( havePointerLock ) {
 
 		if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
 
-			controls.enabled = true;
+			kbamControls.enabled = true;
 
 			blocker.style.display = 'none';
 
 		} else {
 
-			controls.enabled = false;
+			kbamControls.enabled = false;
 
 			blocker.style.display = '-webkit-box';
 			blocker.style.display = '-moz-box';

@@ -7,7 +7,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var scope = this;
 	var sceneGraph;			// set in loading callback
 	
-	 var playerHeight = 10;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
+	 var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
 	 var playerBound = 2;	// keep player these units away from walls
 	 var stepHeight = 1;	// tolerance for variations in elevation before player is considered 'falling'
 
@@ -36,7 +36,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var PI_2 = Math.PI / 2;
 
 	var onMouseMove = function ( event ) {
-		console.log("moving mouse...");
 		if ( scope.enabled === false ) return;
 
 		var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
@@ -164,10 +163,10 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		velocity.x += ( - velocity.x ) * 0.08 * delta;
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
 
-		if ( moveForward ) velocity.z -= 0.12 * delta;
-		if ( moveBackward ) velocity.z += 0.12 * delta;
-		if ( moveLeft ) velocity.x -= 0.12 * delta;
-		if ( moveRight ) velocity.x += 0.12 * delta;
+		if ( moveForward ) velocity.z -= 0.06 * delta;
+		if ( moveBackward ) velocity.z += 0.06 * delta;
+		if ( moveLeft ) velocity.x -= 0.06 * delta;
+		if ( moveRight ) velocity.x += 0.06 * delta;
 
 		if ( canJump === true ) {
 			velocity.y = Math.max( 0, velocity.y );
@@ -209,7 +208,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			intersections = yRaycaster.intersectOctreeObjects( sceneGraphObjects );
 			if ( intersections.length > 0 ) {
 				var distance = intersections[0].distance;
-				if (intersections[1]) console.log(intersections[1]);
 				if (distance - playerHeight <= stepHeight && canJump) {
 					velocity.y = 0;
 					yawObject.position.y = intersections[0].point.y + playerHeight;
