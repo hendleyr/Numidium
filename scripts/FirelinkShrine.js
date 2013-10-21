@@ -107,8 +107,11 @@ function init()
 	
 	var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
 	directionalLight.position.set( -1500, 0, 1200 );
-
 	scene.add( directionalLight );
+	
+	// AUDIO
+	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+	scene.add( ambientAudio );
 }
 
 function animate() 
