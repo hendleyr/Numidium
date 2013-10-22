@@ -5,18 +5,20 @@
 
 NUMIDIUM.NumidiumControls = function ( camera ) {
 	var scope = this;
-	var sceneGraph;			// set in loading callback
 	
-	 var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
-	 var playerBound = 2;	// keep player these units away from walls
-	 var stepHeight = 1;	// tolerance for variations in elevation before player is considered 'falling'
+	var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
+	var playerBound = 2;	// keep player these units away from walls
+	var stepHeight = 1;	// tolerance for variations in elevation before player is considered 'falling'
 
 	var velocity = new THREE.Vector3();
 	
 	camera.rotation.set( 0, 0, 0 );
 
+	var rollObject = new THREE.Object3D();
+	rollObject.add(camera);
+	
 	var pitchObject = new THREE.Object3D();
-	pitchObject.add( camera );
+	pitchObject.add(rollObject);
 
 	var yawObject = new THREE.Object3D();
 	yawObject.position.y = playerHeight;
@@ -45,7 +47,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		pitchObject.rotation.x -= movementY * 0.002;
 
 		pitchObject.rotation.x = Math.max( - PI_2, Math.min( PI_2, pitchObject.rotation.x ) );
-
 	};
 
 	var onKeyDown = function ( event ) {
@@ -113,48 +114,8 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	this.getObject = function () {
 		return yawObject;
 	};
-
-	this.getDirection = function() {
-		// assumes the camera itself is not rotated
-
-		var direction = new THREE.Vector3( 0, 0, -1 );
-		var rotation = new THREE.Euler( 0, 0, 0, "YXZ" );
-
-		return function( v ) {
-			rotation.set( pitchObject.rotation.x, yawObject.rotation.y, 0 );
-			v.copy( direction ).applyEuler( rotation );
-			return v;
-		}
-	}();
-
-	/*===================================================
-	MOVEMENT FUNCTIONS
-	=====================================================*/
-	//var slideVector = function () {
-		// would collide against some object normally, so instead redirect along its plane
-		// by shifting velocity in that direction
-	//};
 	
-	// var clipVector = function ( inVector, normalVector, outVector, overbounce ) {
-		// var	backoff;
-		// var	change;
-
-		// backoff = inVector.dot(normal);
-
-		// if ( backoff < 0 ) {
-			// backoff *= overbounce;
-		// } else {
-			// backoff /= overbounce;
-		// }
-
-		// for (var i=0 ; i<3 ; i++ ) {
-			// change = normalVector[i]*backoff;
-			// outVector[i] = inVector[i] - change;
-		// }
-	// }
-	//------------------------------------------------------------
-	
-	this.update = function ( delta ) {		
+	this.update = function ( delta ) {
 		if ( scope.enabled === false ) {
 			return;
 		}
@@ -176,6 +137,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			velocity.y = Math.max(velocity.y, -2);
 		}
 		
+		// sceneGraph set in loading callback. probably want to rework this somehow to be more clear
 		if (this.sceneGraph) {
 			var intersections, sceneGraphObjects, lookAhead = new THREE.Object3D();
 			lookAhead.position.x = yawObject.position.x;
@@ -189,8 +151,8 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 				console.log("x: bumped into something");
 				velocity.x = 0;
 			}
-			// check z
 			
+			// check z		
 			sceneGraphObjects = this.sceneGraph.search( zRaycaster.ray.origin, zRaycaster.ray.far, true, zRaycaster.ray.direction );
 			intersections = zRaycaster.intersectOctreeObjects( sceneGraphObjects );
 			if ( intersections.length > 0 ) {
@@ -217,16 +179,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					//console.log("We're falling...");
 					canJump = false;
 				}
-			}
-			else {
-				// judging by lookAhead, we've abyssed ourselves--don't allow the move
-				// console.log("abyssed!");
-				// velocity.x = 0, velocity.y = 0, velocity.z = 0;
-				
-				// 12/10/2013 TODO: sadly this feature breaks (or seems to) when transitioning between certain nodes 
-				// in our octree; the raycaster is random-ishly failing to find any intersections at certain points in 
-				// our map. possible easy solution is to increase octree overlap, but i think i've already pushed it
-				// kinda far...
 			}
 			
 			yawObject.translateX( velocity.x );
