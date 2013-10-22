@@ -6,7 +6,7 @@
  * it works also with other HMD using the same technology
  */
 
-THREE.OculusRiftEffect = function ( renderer, camera, options ) {
+THREE.NumidiumOculusRiftEffect = function ( renderer, camera, options ) {
 	// worldFactor indicates how many units is 1 meter
 	var worldFactor = (options && options.worldFactor) ? options.worldFactor: 1.0;
 

@@ -19,11 +19,15 @@ NUMIDIUM.ViewController = function () {
 			renderer = new THREE.CanvasRenderer();
 		}
 		
-		oculusRenderer = new THREE.OculusRiftEffect( renderer, camera, {worldFactor: 1} );
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		renderer.setClearColor( scene.fog.color, 1 );
+		renderer.autoClear = false;
+		renderer.shadowMapEnabled = true;
+		renderer.shadowMapType = THREE.PCFShadowMap;
+		
+		oculusRenderer = new THREE.NumidiumOculusRiftEffect( renderer, camera, {worldFactor: 1} );
 		anaglyphRenderer = new THREE.AnaglyphEffect(  renderer, window.innerWidth, window.innerHeight );
 
-		
-		renderer.setSize(window.innerWidth, window.innerHeight);
 		document.addEventListener( 'keydown', onKeyDown, false );
 		window.addEventListener('resize', onWindowResize, false);
 	};

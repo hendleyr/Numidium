@@ -3,6 +3,7 @@ var container, scene, stats, collisionMesh;
 var kbamControls, oculusControls, viewController;
 var clock = new THREE.Clock();
 var time = Date.now();
+var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
 
 init();
 animate();
@@ -12,6 +13,7 @@ function init()
 {
 	// SCENE
 	scene = new THREE.Scene();
+	scene.fog = new THREE.FogExp2( 0x9999ff, 0.00075 );
 	sceneGraph = new THREE.Octree( {
 		// uncomment below to see the octree (may kill the fps)
 		// scene: scene,
@@ -22,14 +24,14 @@ function init()
 		// set the max depth of tree
 		depthMax: Infinity,
 		// max number of objects before nodes split or merge
-		objectsThreshold: 512,
+		objectsThreshold: 256,
 		// percent between 0 and 1 that nodes will overlap each other
 		// helps insert objects that lie over more than one node
 		overlapPct: 0.25
 	} );
 	
 	// RENDERER
-	viewController =  new NUMIDIUM.ViewController();
+	viewController = new NUMIDIUM.ViewController();
 	container = document.body;
 	container.appendChild(viewController.getRenderer().domElement);
 	
@@ -78,7 +80,6 @@ function init()
 	var skyBoxGeometry = new THREE.CubeGeometry( 10000, 10000, 10000 );
 	var skyBoxMesh = new THREE.Mesh( skyBoxGeometry, skyBoxMaterial );
 	scene.add(skyBoxMesh);
-	scene.fog = new THREE.FogExp2( 0x9999ff, 0.00075 );
 
 	// LEVEL GEOMETRY
 	var manager = new THREE.LoadingManager();
@@ -89,8 +90,14 @@ function init()
 	 var loader = new THREE.OBJLoader( manager );
 	 loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
 		collisionMesh = object;
-		kbamControls.sceneGraph = sceneGraph;
 		collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
+		collisionMesh.castShadow = true;
+		collisionMesh.receiveShadow = true;
+		
+		// set the mesh to cast/receive shadows
+		collisionMesh.children[0].children[0].castShadow = true;
+		collisionMesh.children[0].children[0].receiveShadow = true;
+		
 		scene.add( collisionMesh );
 		sceneGraph.add(collisionMesh.children[0].children[0], { useFaces: true });	// add mesh
 		kbamControls.sceneGraph = sceneGraph;				 
@@ -98,16 +105,32 @@ function init()
 	 });
 	
 	// LIGHTS
-	var ambientLight = new THREE.AmbientLight(0x857e76);
-	scene.add(ambientLight);
+	var ambientLight = new THREE.AmbientLight(0x423433);
+
 	
-	var light = new THREE.PointLight(0x857e76);
-	light.position.set(-100,200,100);
-	scene.add(light);
+	directionalLight.position.set( -1500, 1100, 1200 );
+	// optimization opportunity--if we can get values for shadow camera right, we can
+	// use smaller frustums/distances/resolutions 
+	//directionalLight.shadowCascade = true;
+	//directionalLight.shadowCameraVisible = true;
 	
-	var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
-	directionalLight.position.set( -1500, 0, 1200 );
+	directionalLight.castShadow = true;
+	directionalLight.shadowCameraRight = 500;
+	directionalLight.shadowCameraLeft = -500;
+	directionalLight.shadowCameraTop = 500;
+	directionalLight.shadowCameraBottom = -500;
+	
+	directionalLight.shadowCameraNear = 50;
+	directionalLight.shadowCameraFar = 5000;
+
+	directionalLight.shadowBias = 0.0001;
+	directionalLight.shadowDarkness = 0.5;
+
+	directionalLight.shadowMapWidth = 2048;
+	directionalLight.shadowMapHeight = 2048;
+	
 	scene.add( directionalLight );
+	scene.add(ambientLight);
 	
 	// AUDIO
 	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
