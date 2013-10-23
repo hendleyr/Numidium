@@ -7,7 +7,7 @@
  */
 
 THREE.NumidiumOculusControls = function ( object ) {
-
+	var scope = this;
 	this.object = object;
 	this.target = new THREE.Vector3( 0, 0, 0 );
 
@@ -24,6 +24,11 @@ THREE.NumidiumOculusControls = function ( object ) {
 					if ( xhr.responseText ) {
 						var json = JSON.parse( xhr.responseText );
 						callback( json );
+					}
+					else {
+						// we failed to get an orientation from oculus-rest; freeze our controls
+						// and let kbam take over
+						scope.freeze = true;						
 					}
 				}
 			}
@@ -53,6 +58,8 @@ THREE.NumidiumOculusControls = function ( object ) {
 
 	this.update = function( delta ) {
 		if ( this.freeze ) {
+			// if no oculus head tracking, make sure camera isn't rolled
+			this.object.parent.rotation.z = 0;
 			return;
 		}
 		

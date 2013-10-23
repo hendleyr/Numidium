@@ -94,8 +94,9 @@ NUMIDIUM.ViewController = function () {
 	
 	this.update = function () {
 		this.sceneGraph.update();
-		kbamControls.update( Date.now() - time ); //TODO: tweak values so clock delta can be used instead
+		
 		oculusControls.update(clock.getDelta());
+		kbamControls.update( Date.now() - time ); //TODO: tweak values so clock delta can be used instead
 	};
 	
 	onWindowResize = function () {
