@@ -8,7 +8,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	
 	var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
 	var playerBound = 6;	// keep player these units away from walls
-	var stepHeight = 1;	// tolerance for variations in elevation before player is considered 'falling'
+	var stepHeight = 1;		// tolerance for variations in elevation before player is considered 'falling'
 
 	var velocity = new THREE.Vector3();
 	
@@ -33,7 +33,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 
 	var yRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, -1, 0), 0.1, Infinity);
 	var xRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(1, 0, 0), 0.1, playerBound);
-	var zRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, 0, 1), 0.1, playerBound);
 
 	var PI_2 = Math.PI / 2;
 
