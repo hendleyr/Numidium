@@ -13,7 +13,7 @@ NUMIDIUM.ViewController = function () {
 		// set the max depth of tree
 		depthMax: Infinity,
 		// max number of objects before nodes split or merge
-		objectsThreshold: 256,
+		objectsThreshold: 128,
 		// percent between 0 and 1 that nodes will overlap each other
 		// helps insert objects that lie over more than one node
 		overlapPct: 0.25

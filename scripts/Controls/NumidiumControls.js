@@ -7,7 +7,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var scope = this;
 	
 	var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
-	var playerBound = 2;	// keep player these units away from walls
+	var playerBound = 6;	// keep player these units away from walls
 	var stepHeight = 1;	// tolerance for variations in elevation before player is considered 'falling'
 
 	var velocity = new THREE.Vector3();
@@ -31,9 +31,9 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 
 	var canJump = false;
 
-	var yRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, -1, 0), 0, Infinity);
-	var xRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(1, 0, 0), 0, playerBound);
-	var zRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, 0, 1), 0, playerBound);
+	var yRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, -1, 0), 0.1, Infinity);
+	var xRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(1, 0, 0), 0.1, playerBound);
+	var zRaycaster = new THREE.Raycaster(yawObject.position, new THREE.Vector3(0, 0, 1), 0.1, playerBound);
 
 	var PI_2 = Math.PI / 2;
 
@@ -139,33 +139,23 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		
 		// sceneGraph set in loading callback. probably want to rework this somehow to be more clear
 		if (this.sceneGraph) {
-			var intersections, sceneGraphObjects, lookAhead = new THREE.Object3D();
-			lookAhead.position.x = yawObject.position.x;
-			lookAhead.position.y = yawObject.position.y;
-			lookAhead.position.z = yawObject.position.z;
-			
-			// check x
-			sceneGraphObjects = this.sceneGraph.search( xRaycaster.ray.origin, xRaycaster.ray.far, true, xRaycaster.ray.direction );	
+			var intersections, sceneGraphObjects;
+			//
+			var movementVector = new THREE.Vector3(velocity.x, 0, velocity.z).normalize();
+			movementVector.applyQuaternion(yawObject.quaternion).normalize();
+			xRaycaster.ray.direction = movementVector;
+			sceneGraphObjects = this.sceneGraph.search(xRaycaster.ray.origin, xRaycaster.ray.far, true, xRaycaster.ray.direction);
 			intersections = xRaycaster.intersectOctreeObjects( sceneGraphObjects );
 			if ( intersections.length > 0 ) {
-				console.log("x: bumped into something");
-				velocity.x = 0;
+				//console.log("bumped into something");
+				velocity.x = 0, velocity.z = 0;
 			}
+
+			yawObject.translateX( velocity.x );
+			yawObject.translateZ( velocity.z );
 			
-			// check z		
-			sceneGraphObjects = this.sceneGraph.search( zRaycaster.ray.origin, zRaycaster.ray.far, true, zRaycaster.ray.direction );
-			intersections = zRaycaster.intersectOctreeObjects( sceneGraphObjects );
-			if ( intersections.length > 0 ) {
-				console.log("z: bumped into something");
-				velocity.z = 0;
-			}
-			
-			// translate x & z, then see if we've made a valid move up or down
-			lookAhead.translateX(velocity.x);
-			lookAhead.translateZ(velocity.z);
-			
-			// look down -- are we stepping up/down, falling up/down, or over an abyss?
-			yRaycaster.ray.origin = lookAhead.position;
+			// look down -- are we stepping up/down, falling down
+			yRaycaster.ray.origin = yawObject.position;
 			sceneGraphObjects = this.sceneGraph.search( yRaycaster.ray.origin, 256, true, yRaycaster.ray.direction );
 			intersections = yRaycaster.intersectOctreeObjects( sceneGraphObjects );
 			if ( intersections.length > 0 ) {
@@ -179,11 +169,9 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					//console.log("We're falling...");
 					canJump = false;
 				}
-			}
-			
-			yawObject.translateX( velocity.x );
+			}			
 			yawObject.translateY( velocity.y );
-			yawObject.translateZ( velocity.z );
+			
 			if (intersections[0] && yawObject.position.y - playerHeight < intersections[0].point.y) {
 				console.log("fell through! fixing...");
 				yawObject.position.y = intersections[0].point.y + playerHeight;
