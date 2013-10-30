@@ -80,6 +80,40 @@ NUMIDIUM.ViewController = function () {
 		}
 	};
 	
+	this.viewToggleAnaglyph = function() {
+		viewToggleAnaglyph();
+	}
+	
+	function viewToggleAnaglyph() {
+		isAnaglyph = true;
+		isOculus = false;
+		oculusControls.freeze = true;
+        onWindowResize();
+	}
+	
+	this.viewToggleNormal = function() {
+		viewToggleNormal();
+	}
+	
+	function viewToggleNormal() {
+		isAnaglyph = false;
+		isOculus = false;
+		oculusControls.freeze = true;
+        onWindowResize();
+	}
+
+	this.viewToggleOculus = function() {
+		viewToggleOculus();
+	}
+	
+	function viewToggleOculus() {
+		isAnaglyph = false;
+		isOculus = true;
+		oculusControls.connect();	// send a GET to http://localhost:50000/
+		oculusControls.freeze = false;
+        onWindowResize();
+	}
+	
 	this.render = function (scene) {
 		if (isAnaglyph) {
 			anaglyphRenderer.render(scene, camera);
@@ -111,23 +145,13 @@ NUMIDIUM.ViewController = function () {
 	onKeyDown = function (event) {
 		switch (event.keyCode) {
 			case 73:	//i
-				isAnaglyph = true;
-				isOculus = false;
-				oculusControls.freeze = true;
-                onWindowResize();
+				viewToggleAnaglyph();
 				break;
 			case 79:	//o
-				isAnaglyph = false;
-				isOculus = true;
-				oculusControls.connect();	// send a GET to http://localhost:50000/
-				oculusControls.freeze = false;
-                onWindowResize();
+				viewToggleOculus();
 				break;
 			case 80:	//p
-				isAnaglyph = false;
-				isOculus = false;
-				oculusControls.freeze = true;
-                onWindowResize();
+				viewToggleNormal();
 				break;
 		}
 	};

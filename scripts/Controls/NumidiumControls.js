@@ -11,7 +11,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var stepHeight = 1;		// tolerance for variations in elevation before player is considered 'falling'
 
 	var velocity = new THREE.Vector3();
-	
 	camera.rotation.set( 0, 0, 0 );
 
 	var rollObject = new THREE.Object3D();
@@ -136,40 +135,28 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					pitchObject.rotation.x = Math.max( - PI_2, Math.min( PI_2, pitchObject.rotation.x ) );
 				}
 				if ( pad.dpadUp ) {
-					// moveForward = true;
-					// playerVelY -= 150;
+					
 				}
 				if ( pad.dpadDown ) {
-					// playerVelY += 150;
-					// moveBackward = true;
+					viewController.viewToggleNormal();
 				}
 				if ( pad.dpadLeft ) {
-					// playerVelX -= 150;
-					// moveLeft = true;
+					viewController.viewToggleAnaglyph();
 				}
 				if ( pad.dpadRight ) {
-					// playerVelX += 150;
-					// moveRight = true;
+					viewController.viewToggleOculus();
 				}
 				if ( pad.faceButton0 && canJump === true ){ // A
 					velocity.y += 2;	// jump velocity
 					canJump=false;
 				}
-					// playerColor = "#00cc00";
 				if ( pad.faceButton1 ) // B
-					// playerColor = "#cc0000";
 				if ( pad.faceButton2 ) // X
-					// playerColor = "#0000cc";
-				if ( pad.faceButton3 ) // Y		
-					// playerColor = "#cccc00";
+				if ( pad.faceButton3 ) // Y
 					
-				if ( pad.select || pad.start )
-				{
-					// playerVelX = playerVelY = 0;
-					// playerPosX = 50;
-					// playerPosY = 150;
+				if ( pad.select || pad.start ) {
+				
 				}
-
 			}
 		}
 		
