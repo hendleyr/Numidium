@@ -115,11 +115,68 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	};
 	
 	this.update = function ( delta ) {
+		
+		delta *= 0.1;
+		if (Gamepad.supported) {
+			var pads = Gamepad.getStates();
+			var pad = pads[0]; // assume only 1 player.
+			if (pad) {
+				// adjust for deadzone.
+				if (Math.abs(pad.leftStickX) > 0.2){
+					velocity.x += 0.06 * pad.leftStickX;
+				}
+				if (Math.abs(pad.leftStickY) > 0.2) {
+						velocity.z += 0.06 * pad.leftStickY;
+				}
+				if (Math.abs(pad.rightStickX) > 0.2) {
+					yawObject.rotation.y -= pad.rightStickX * 0.05;
+				}
+				if (Math.abs(pad.rightStickY) > 0.2) {
+					pitchObject.rotation.x -= pad.rightStickY * 0.05;
+					pitchObject.rotation.x = Math.max( - PI_2, Math.min( PI_2, pitchObject.rotation.x ) );
+				}
+				if ( pad.dpadUp ) {
+					// moveForward = true;
+					// playerVelY -= 150;
+				}
+				if ( pad.dpadDown ) {
+					// playerVelY += 150;
+					// moveBackward = true;
+				}
+				if ( pad.dpadLeft ) {
+					// playerVelX -= 150;
+					// moveLeft = true;
+				}
+				if ( pad.dpadRight ) {
+					// playerVelX += 150;
+					// moveRight = true;
+				}
+				if ( pad.faceButton0 && canJump === true ){ // A
+					velocity.y += 2;	// jump velocity
+					canJump=false;
+				}
+					// playerColor = "#00cc00";
+				if ( pad.faceButton1 ) // B
+					// playerColor = "#cc0000";
+				if ( pad.faceButton2 ) // X
+					// playerColor = "#0000cc";
+				if ( pad.faceButton3 ) // Y		
+					// playerColor = "#cccc00";
+					
+				if ( pad.select || pad.start )
+				{
+					// playerVelX = playerVelY = 0;
+					// playerPosX = 50;
+					// playerPosY = 150;
+				}
+
+			}
+		}
+		
 		if ( scope.enabled === false ) {
 			return;
 		}
 
-		delta *= 0.1;
 		velocity.x += ( - velocity.x ) * 0.08 * delta;
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
 
