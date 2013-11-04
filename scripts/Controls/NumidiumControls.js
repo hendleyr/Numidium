@@ -122,10 +122,10 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			if (pad) {
 				// adjust for deadzone.
 				if (Math.abs(pad.leftStickX) > 0.2){
-					velocity.x += 0.06 * pad.leftStickX;
+					velocity.x += 0.06 * pad.leftStickX * delta;
 				}
 				if (Math.abs(pad.leftStickY) > 0.2) {
-						velocity.z += 0.06 * pad.leftStickY;
+					velocity.z += 0.06 * pad.leftStickY * delta;
 				}
 				if (Math.abs(pad.rightStickX) > 0.2) {
 					yawObject.rotation.y -= pad.rightStickX * 0.05;
@@ -150,7 +150,10 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					velocity.y += 2;	// jump velocity
 					canJump=false;
 				}
-				if ( pad.faceButton1 ) // B
+				if ( pad.faceButton1 ) {// B
+					velocity.x += 0.06 * pad.leftStickX * delta;
+					velocity.z += 0.06 * pad.leftStickY * delta;
+				}
 				if ( pad.faceButton2 ) // X
 				if ( pad.faceButton3 ) // Y
 					
