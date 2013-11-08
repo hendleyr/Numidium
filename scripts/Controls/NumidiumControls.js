@@ -23,6 +23,8 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	yawObject.position.y = playerHeight;
 	yawObject.add( pitchObject );
 
+	var gamepadRotateObject = new THREE.Object3D();
+	
 	var moveForward = false;
 	var moveBackward = false;
 	var moveLeft = false;
@@ -112,6 +114,11 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	this.getObject = function () {
 		return yawObject;
 	};
+	
+	this.getGamepadRotate = function () {
+		return gamepadRotateObject;
+	};
+	
 	
 	this.update = function ( delta ) {
 		
