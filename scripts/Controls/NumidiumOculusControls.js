@@ -56,16 +56,16 @@ THREE.NumidiumOculusControls = function ( object ) {
 		setTimeout(bind(this, this.pollOnce), 10);
 	}
 
-	this.update = function( delta ) {
+	this.update = function( delta, gamepadRotate ) {
 		if ( this.freeze ) {
 			// if no oculus head tracking, make sure camera isn't rolled
 			this.object.parent.rotation.z = 0;
 			return;
 		}
 		
-		this.object.parent.rotation.z = this.roll;
-		this.object.parent.parent.parent.rotation.y = this.yaw;
-		this.object.parent.parent.rotation.x = this.pitch;
+		this.object.parent.rotation.z = this.roll + gamepadRotate.rotation.z;
+		this.object.parent.parent.parent.rotation.y = this.yaw + gamepadRotate.rotation.y;
+		this.object.parent.parent.rotation.x = this.pitch + gamepadRotate.rotation.x;
 	};
 
 	function bind( scope, fn ) {

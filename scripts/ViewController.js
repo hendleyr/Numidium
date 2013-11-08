@@ -129,7 +129,7 @@ NUMIDIUM.ViewController = function () {
 	this.update = function () {
 		this.sceneGraph.update();
 		
-		oculusControls.update(clock.getDelta());
+		oculusControls.update(clock.getDelta(), kbamControls.getGamepadRotate());
 		kbamControls.update( Date.now() - time ); //TODO: tweak values so clock delta can be used instead
 	};
 	

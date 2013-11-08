@@ -100,8 +100,8 @@ function init()
 	scene.add(ambientLight);
 	
 	// AUDIO
-	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
-	scene.add( ambientAudio );
+	//var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+	//scene.add( ambientAudio );
 }
 
 function animate() 
