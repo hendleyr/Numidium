@@ -29,6 +29,13 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var moveBackward = false;
 	var moveLeft = false;
 	var moveRight = false;
+	
+	// sound effects
+	var audio = document.createElement('audio');
+	var source = document.createElement('source');
+	source.src = 'audio/Footsteps.wav';
+	audio.appendChild(source);
+	
 
 	var canJump = false;
 
@@ -50,6 +57,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	};
 
 	var onKeyDown = function ( event ) {
+		audio.play();
 		if (canJump === true) {
 			// disable movement input if midair
 			switch ( event.keyCode ) {
@@ -130,10 +138,14 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 				// adjust for deadzone.
 				if (Math.abs(pad.leftStickX) > 0.2){
 					velocity.x += 0.06 * pad.leftStickX * delta;
+					audio.play();
 				}
+				
 				if (Math.abs(pad.leftStickY) > 0.2) {
 					velocity.z += 0.06 * pad.leftStickY * delta;
+					audio.play();
 				}
+
 				if (Math.abs(pad.rightStickX) > 0.2) {
 					yawObject.rotation.y -= pad.rightStickX * 0.05;
 				}
@@ -177,10 +189,14 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		velocity.x += ( - velocity.x ) * 0.08 * delta;
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
 
+
 		if ( moveForward ) velocity.z -= 0.06 * delta;
 		if ( moveBackward ) velocity.z += 0.06 * delta;
 		if ( moveLeft ) velocity.x -= 0.06 * delta;
 		if ( moveRight ) velocity.x += 0.06 * delta;
+		
+
+		
 
 		if ( canJump === true ) {
 			velocity.y = Math.max( 0, velocity.y );
