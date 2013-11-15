@@ -1,6 +1,6 @@
 /**
  * @author mrdoob / http://mrdoob.com/
- * @edited by Thomas Grelecki, Derek Isson, Richard Hendley, Ger Her
+ * @edited by Thomas Grelecki, Derek Ison, Richard Hendley, Ger Her
  */
 
 NUMIDIUM.NumidiumControls = function ( camera ) {

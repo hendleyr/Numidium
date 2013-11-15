@@ -3,6 +3,7 @@ var clock = new THREE.Clock();
 var time = Date.now();
 
 NUMIDIUM.ViewController = function () {
+	if ( window.innerWidth === 0 ) { window.innerWidth = parent.innerWidth; window.innerHeight = parent.innerHeight; }
 	this.sceneGraph = new THREE.Octree( {
 		// uncomment below to see the octree (may kill the fps)
 		// scene: scene,
@@ -20,64 +21,75 @@ NUMIDIUM.ViewController = function () {
 	} );
 
 	var camera, viewAngle, aspectRatio, nearClip, farClip;
-	var renderer, anaglyphRenderer, oculusRenderer;
-	var shadowMapQuality = 1, shadowQualityDistribution = [256, 512, 512, 512, 1024, 1024, 1024, 1024], directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
+	var renderer, anaglyphRenderer, oculusRenderer, effectComposer, colorRenderTarget;
+	var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
 	var kbamControls, oculusControls, gamepadControls;
 	var	isAnaglyph = false, isOculus = false;
-	this.directionalLight = function () {return directionalLight;}
+	this.directionalLight = function () { return directionalLight; }
+	
+	var depthPassPlugin, depthRenderTarget, ssaoEffectPass;
+	var depthMaterial;
 	
 	init = function () {
 		viewAngle = 45;
 		aspectRatio = window.innerWidth / window.innerHeight;
-		nearClip = 1;
-		farClip = 10000;
+		nearClip = 2;//test
+		farClip = 200;//test
 		camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, nearClip, farClip);
+		scene.add( camera );
 		
-		if ( Detector.webgl ) {
-			renderer = new THREE.WebGLRenderer( {antialias:false} );
-		}
-		else {
-			renderer = new THREE.CanvasRenderer();
-		}
+		// if ( Detector.webgl ) {
+			renderer = new THREE.WebGLRenderer();
+		// }
+		// else {
+			// renderer = new THREE.CanvasRenderer();
+		// }
+		
+		// RENDER TARGETS		
+		depthRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat } );
+		colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
 		
 		// RENDERER
-		renderer.setSize(window.innerWidth, window.innerHeight);
-		renderer.setClearColor( scene.fog.color, 1 );
-		renderer.autoClear = false;
-		renderer.shadowMapEnabled = true;
-		renderer.shadowMapCascade = true;
-		//renderer.shadowMapType = THREE.BasicShadowMap;	// best performance
-		//renderer.shadowMapType = THREE.PCFShadowMap;
-		renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		var depthShader = THREE.ShaderLib[ "depthRGBA" ];
+		var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
+
+		depthMaterial = new THREE.ShaderMaterial( { fragmentShader: depthShader.fragmentShader, vertexShader: depthShader.vertexShader, uniforms: depthUniforms } );
+		depthMaterial.blending = THREE.NoBlending;
+		//effectComposer = new THREE.EffectComposer( renderer, colorRenderTarget );
+		effectComposer = new THREE.EffectComposer( renderer );
+		effectComposer.addPass( new THREE.RenderPass( scene, camera ) );
+
+		ssaoEffectPass = new THREE.ShaderPass( THREE.SSAOShader );
+
+		ssaoEffectPass.uniforms[ 'tDepth' ].texture = depthRenderTarget;
+		ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
+		ssaoEffectPass.uniforms[ 'cameraNear' ].value = camera.near;
+		ssaoEffectPass.uniforms[ 'cameraFar' ].value = camera.far;
+		ssaoEffectPass.uniforms[ 'aoClamp' ].value = 0.0;
+		// ssaoEffectPass.uniforms[ 'lumInfluence' ].value = 0.0;
+		ssaoEffectPass.renderToScreen = true;
+		ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1;//testing
 		
-		oculusRenderer = new THREE.NumidiumOculusRiftEffect( renderer, camera, {worldFactor: 1} );
-		anaglyphRenderer = new THREE.AnaglyphEffect(  renderer, window.innerWidth, window.innerHeight );
+		effectComposer.addPass( ssaoEffectPass );
+
+		oculusRenderer = new THREE.NumidiumOculusRiftEffect( renderer, camera, { worldFactor: 1 } );
+		anaglyphRenderer = new THREE.AnaglyphEffect( renderer, window.innerWidth, window.innerHeight );
 
 		// LIGHTS
 		directionalLight.position.set( -1500, 1100, 1200 );
-		directionalLight.castShadow = true;
-		
-		directionalLight.shadowCascadeCount = 8;
-		directionalLight.shadowCascadeWidth = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
-		directionalLight.shadowCascadeHeight = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
-		directionalLight.shadowCascadeNearZ = [-0.1, 0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999];
-		directionalLight.shadowCascadeFarZ  = [0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999, 1.00];
-		directionalLight.shadowCascadeBias = [0.005, 0.005, 0.005, 0.005, 0.004, 0.0065, 0.0065, 0.0065];
-		// directionalLight.shadowCascadeOffset.z = -100;
-		directionalLight.shadowCascade = true;
-		// directionalLight.shadowCameraVisible = true;
 		directionalLight.shadowDarkness = 0.5;
-		scene.add(directionalLight);
+		scene.add( directionalLight );
 		
 		// VIEW CONTROLS
 		document.addEventListener( 'keydown', onKeyDown, false );
-		window.addEventListener('resize', onWindowResize, false);
+		window.addEventListener( 'resize', onWindowResize, false );
 		
 		// CONTROLS
-		oculusControls = new THREE.NumidiumOculusControls(camera);
-		kbamControls = new NUMIDIUM.NumidiumControls(camera);
+		oculusControls = new THREE.NumidiumOculusControls( camera );
+		kbamControls = new NUMIDIUM.NumidiumControls( camera );
 		kbamControls.sceneGraph = this.sceneGraph;
-		kbamControls.getObject().position.set(872,-82,-261);
+		kbamControls.getObject().position.set( 591.2682999279975, -150.51886730958248, -524.7649342454138 );
 		scene.add( kbamControls.getObject() );
 		pointerLockAttach();
 	};
@@ -137,22 +149,25 @@ NUMIDIUM.ViewController = function () {
         onWindowResize();
 	}
 	
-	this.render = function (scene) {
-		if (isAnaglyph) {
-			anaglyphRenderer.render(scene, camera);
+	this.render = function () {
+		if ( isAnaglyph ) {
+			anaglyphRenderer.render( scene, camera );
 		}
 		else if (isOculus) {
-			oculusRenderer.render(scene, camera);
+			oculusRenderer.render( scene, camera );
 		}
 		else {
-			renderer.render(scene, camera);
+			scene.overrideMaterial = depthMaterial;
+			renderer.render( scene, camera, depthRenderTarget );
+			// scene.overrideMaterial = null;
+			effectComposer.render();			
 		}
 	};
 	
 	this.update = function () {
 		this.sceneGraph.update();
 		
-		oculusControls.update(clock.getDelta(), kbamControls.getGamepadRotate());
+		oculusControls.update( clock.getDelta(), kbamControls.getGamepadRotate() );
 		kbamControls.update( Date.now() - time ); //TODO: tweak values so clock delta can be used instead
 	};
 	
@@ -160,56 +175,25 @@ NUMIDIUM.ViewController = function () {
 		camera.aspect = window.innerWidth / window.innerHeight;
 		camera.updateProjectionMatrix();
 
-		renderer.setSize(window.innerWidth, window.innerHeight);
-		anaglyphRenderer.setSize(window.innerWidth, window.innerHeight);
-		oculusRenderer.setSize(window.innerWidth, window.innerHeight);
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		anaglyphRenderer.setSize( window.innerWidth, window.innerHeight );
+		oculusRenderer.setSize( window.innerWidth, window.innerHeight );
+		
+		depthRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat } );
+		colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
+
+		effectComposer.reset( colorRenderTarget );
+
+		ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
+		ssaoEffectPass.uniforms[ 'tDepth' ].texture = depthRenderTarget;
+		
 	};
 	
-	onKeyDown = function (event) {
+	onKeyDown = function ( event ) {
 		console.log(event.keyCode);
 		switch (event.keyCode) {
-			case 49:
-				renderer.shadowMapType = THREE.BasicShadowMap;	// best performance
-				break;
-			case 50:
-				renderer.shadowMapType = THREE.PCFShadowMap;
-				break;
-			case 51:
-				renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
-				break;
-			// case 192:{	// ~
-				//TODO: toggle shadow mapping 
-				// var shadowToggle = !directionalLight.castShadow;
-				
-				// for(var i = 0; i < directionalLight.shadowCascadeArray.length; ++i) {
-					// directionalLight.shadowCascadeArray[i].castShadow = shadowToggle;
-					
-					// if (!shadowToggle && directionalLight.shadowCascadeArray[i].shadowMap) {
-						// directionalLight.shadowCascadeArray[i].shadowMap.dispose();
-					// }
-				// }
-				
-				// directionalLight.castShadow = shadowToggle;				
-				// if (!shadowToggle && directionalLight.shadowMap) {
-					// directionalLight.shadowMap.dispose();
-				// }
-				// break;
-			// }
-			case 189:	// -
-				shadowMapQuality /= 2;
-				shadowQualityDistribution = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
-				for(var i = 0; i < directionalLight.shadowCascadeArray.length; ++i) {
-					directionalLight.shadowCascadeArray[i].shadowMap.width = shadowQualityDistribution[i] * shadowMapQuality;
-					directionalLight.shadowCascadeArray[i].shadowMap.height = shadowQualityDistribution[i] * shadowMapQuality;
-				}
-				break;
-			case 187:	// +
-				shadowMapQuality *= 2;
-				shadowQualityDistribution = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
-				for(var i = 0; i < directionalLight.shadowCascadeArray.length; ++i) {
-					directionalLight.shadowCascadeArray[i].shadowMap.width = shadowQualityDistribution[i] * shadowMapQuality;
-					directionalLight.shadowCascadeArray[i].shadowMap.height = shadowQualityDistribution[i] * shadowMapQuality;
-				}
+			case 49:	//1
+				// ssaoEffectPass.enabled = !ssaoEffectPass.enabled;	//TODO: on/off switch for SSAO
 				break;
 			case 73:	//i
 				viewToggleAnaglyph();
