@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			#loadingScreen {
+				position:absolute;
+				width:100%;
+				height:100%;
+				background-color:#000;
+				color:#fff;
+				z-index:10;
+			}
+		
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+
+			body {
+				background-color: #ffffff;
+				margin: 0;
+				overflow: hidden;
+				font-family: arial;
+			}
+
+			#blocker {
+
+				position: absolute;
+
+				width: 100%;
+				height: 100%;
+
+				background-color: rgba(0,0,0,0.5);
+
+			}
+
+			#instructions {
+
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #ffffff;
+				text-align: center;
+
+				cursor: pointer;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="blocker">
+			<div id="instructions">
+				<span style="font-size:40px">Click to begin</span>
+				<br />
+				(W, A, S, D = Move, SPACE = Jump, MOUSE = Look, ESCAPE = Pause)
+				<br />
+				(I / O / P = Anaglyph / Oculus / Projection Views)
+			</div>
+		</div>
+		<script>
+			var NUMIDIUM = {};
+		</script>
+		<script src="scripts/lib/three.js"></script>
+		<script src="scripts/lib/Octree.js"></script>
+		<script src="scripts/effects/CopyShader.js"></script>
+		<script src="scripts/effects/SSAOShader.js"></script>
+		<script src="scripts/effects/EffectComposer.js"></script>
+		<script src="scripts/effects/RenderPass.js"></script>
+		<script src="scripts/effects/MaskPass.js"></script>		
+		<script src="scripts/effects/ShaderPass.js"></script>
+		<script src="scripts/loaders/OBJLoader.js"></script>
+		<script src="scripts/Controls/gamepad.js"></script>
+		<script src="scripts/Controls/NumidiumControls.js"></script>
+		<script src="scripts/Controls/NumidiumOculusControls.js"></script>		
+		
+		<script>
+			var pointerLockAttach = function () {
+					var blocker = document.getElementById( 'blocker' );
+					//var instructions = document.getElementById( 'instructions' );
+
+					// http://www.html5rocks.com/en/tutorials/pointerlock/intro/
+
+					var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
+
+					if ( havePointerLock ) {
+						var element = document.body;
+
+						var pointerlockchange = function ( event ) {
+							if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+								kbamControls.enabled = true;
+
+								blocker.style.display = 'none';
+							} else {
+								kbamControls.enabled = false;
+
+								blocker.style.display = '-webkit-box';
+								blocker.style.display = '-moz-box';
+								blocker.style.display = 'box';
+								
+								instructions.style.display = '';
+							}
+						}
+
+						var pointerlockerror = function ( event ) {
+							instructions.style.display = '';
+						}
+
+						// Hook pointer lock state change events
+						document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+						document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+						document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
+						
+						instructions.addEventListener( 'click', function ( event ) {
+						instructions.style.display = 'none';
+
+						// Ask the browser to lock the pointer
+						element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+
+						if ( /Firefox/i.test( navigator.userAgent ) ) {
+							var fullscreenchange = function ( event ) {
+								if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+									document.removeEventListener( 'fullscreenchange', fullscreenchange );
+									document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+
+									element.requestPointerLock();
+								}
+							}
+
+							document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+							document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+							element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+
+							element.requestFullscreen();
+
+						} else {
+							element.requestPointerLock();
+						}
+
+					}, false );
+				} else {
+					instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
+				}
+			};
+		
+			// workaround for chrome bug: http://code.google.com/p/chromium/issues/detail?id=35980#c12
+			if ( window.innerWidth === 0 ) { window.innerWidth = parent.innerWidth; window.innerHeight = parent.innerHeight; }
+							
+			var camera, scene, renderer;
+			var kBamControls, sceneGraph, collisionMesh;
+			var depthMaterial, depthTarget, composer;
+			var time = Date.now();
+
+			init();
+			animate();
+
+			function init() {
+				//CAMERA
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+
+				//SCENE
+				scene = new THREE.Scene();
+				scene.add( new THREE.AmbientLight( 0x423433 ) );
+				scene.add( new THREE.DirectionalLight( new THREE.DirectionalLight( 0xfefdbc, 0.5 ) ) );
+			
+				//RENDERER
+				renderer = new THREE.WebGLRenderer();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				document.body.appendChild( renderer.domElement );
+				
+				//SCENE GRAPH
+				sceneGraph = new THREE.Octree( {
+					// scene: scene,
+					undeferred: true,
+					depthMax: Infinity,
+					objectsThreshold: 128,
+					overlapPct: 0.25
+				} );
+								
+				//DEPTH SHADER				
+				var depthShader = THREE.ShaderLib[ "depthRGBA" ];
+				var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
+				depthMaterial = new THREE.ShaderMaterial( { fragmentShader: depthShader.fragmentShader, vertexShader: depthShader.vertexShader, uniforms: depthUniforms } );
+				depthMaterial.blending = THREE.NoBlending;
+
+				//POST PROCESSING				
+				composer = new THREE.EffectComposer( renderer );
+				composer.addPass( new THREE.RenderPass( scene, camera ) );
+
+				depthTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+				
+				var effect = new THREE.ShaderPass( THREE.SSAOShader );
+				effect.uniforms[ 'tDepth' ].value = depthTarget;
+				effect.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
+				effect.uniforms[ 'cameraNear' ].value = camera.near;
+				effect.uniforms[ 'cameraFar' ].value = camera.far;
+				effect.uniforms[ 'aoClamp' ].value = 0.5;
+				effect.uniforms[ 'lumInfluence' ].value = 0.5;
+				//effect.uniforms[ 'onlyAO' ].value = 1.0;
+				effect.renderToScreen = true;
+				composer.addPass( effect );
+				
+				//GEOMETRY
+				var loader = new THREE.OBJLoader( );
+				loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
+					object.scale.set( 10, 10, 10 );
+					collisionMesh = object;
+					collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
+					scene.add( object );
+					sceneGraph.add( collisionMesh.children[0].children[0], { useFaces: true } );
+					kbamControls.sceneGraph = sceneGraph;
+				} );
+				 
+				 // CONTROLS
+				kbamControls = new NUMIDIUM.NumidiumControls( camera );
+				
+				kbamControls.getObject().position.set( 591, -150, -524 );
+				scene.add( kbamControls.getObject() );
+				pointerLockAttach();
+			};
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+				
+				var timer = performance.now();
+				
+				sceneGraph.update();
+				kbamControls.update( Date.now() - time );
+				scene.overrideMaterial = depthMaterial;
+				renderer.render( scene, camera, depthTarget );
+
+				scene.overrideMaterial = null;
+				composer.render();
+				time = Date.now();
+				
+			};
+
+		</script>
+	</body>
+</html>

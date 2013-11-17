@@ -48,12 +48,12 @@ function init()
 	// scene.add(skyBoxMesh);
 
 	// LEVEL GEOMETRY
-	var manager = new THREE.LoadingManager();
-	manager.onProgress = function ( item, loaded, total ) {
-		console.log( item, loaded, total );
-	};
+	// var manager = new THREE.LoadingManager();
+	// manager.onProgress = function ( item, loaded, total ) {
+		// console.log( item, loaded, total );
+	// };
 
-	 var loader = new THREE.OBJLoader( manager );
+	 var loader = new THREE.OBJLoader( );
 	 loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
 		collisionMesh = object;
 		collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
@@ -65,12 +65,12 @@ function init()
 	 });
 	
 	// LIGHTS
-	var ambientLight = new THREE.AmbientLight(0x423433);
+	var ambientLight = new THREE.AmbientLight(0x423433);	
 	scene.add(ambientLight);
 	
 	// AUDIO
-	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
-	scene.add( ambientAudio );
+	// var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+	// scene.add( ambientAudio );
 }
 
 function animate() 

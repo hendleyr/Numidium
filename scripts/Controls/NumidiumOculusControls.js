@@ -1,6 +1,6 @@
 /**
  * @author possan / http://possan.se/
- *
+ * @edited by Thomas Grelecki, Derek Ison, Richard Hendley, Ger Her
  * Oculus headtracking control
  * - use together with the oculus-rest project to get headtracking
  *   coordinates from the rift: http://github.com/possan/oculus-rest

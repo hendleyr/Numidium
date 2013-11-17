@@ -27,41 +27,39 @@ NUMIDIUM.ViewController = function () {
 	var	isAnaglyph = false, isOculus = false;
 	this.directionalLight = function () { return directionalLight; }
 	
-	var depthPassPlugin, depthRenderTarget, ssaoEffectPass;
+	var depthRenderTarget, ssaoEffectPass;
 	var depthMaterial;
 	
 	init = function () {
 		viewAngle = 45;
 		aspectRatio = window.innerWidth / window.innerHeight;
-		nearClip = 2;//test
-		farClip = 200;//test
+		nearClip = 10;//test
+		farClip = 1000;//test
 		camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, nearClip, farClip);
-		scene.add( camera );
 		
-		// if ( Detector.webgl ) {
+		if ( Detector.webgl ) {
 			renderer = new THREE.WebGLRenderer();
-		// }
-		// else {
-			// renderer = new THREE.CanvasRenderer();
-		// }
+		}
+		else {
+			renderer = new THREE.CanvasRenderer();
+		}
 		
 		// RENDER TARGETS		
 		depthRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat } );
-		colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
+		// colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
 		
 		// RENDERER
 		renderer.setSize( window.innerWidth, window.innerHeight );
+		
 		var depthShader = THREE.ShaderLib[ "depthRGBA" ];
 		var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
-
 		depthMaterial = new THREE.ShaderMaterial( { fragmentShader: depthShader.fragmentShader, vertexShader: depthShader.vertexShader, uniforms: depthUniforms } );
 		depthMaterial.blending = THREE.NoBlending;
-		//effectComposer = new THREE.EffectComposer( renderer, colorRenderTarget );
+		
 		effectComposer = new THREE.EffectComposer( renderer );
 		effectComposer.addPass( new THREE.RenderPass( scene, camera ) );
-
+		
 		ssaoEffectPass = new THREE.ShaderPass( THREE.SSAOShader );
-
 		ssaoEffectPass.uniforms[ 'tDepth' ].texture = depthRenderTarget;
 		ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
 		ssaoEffectPass.uniforms[ 'cameraNear' ].value = camera.near;
@@ -69,8 +67,7 @@ NUMIDIUM.ViewController = function () {
 		ssaoEffectPass.uniforms[ 'aoClamp' ].value = 0.0;
 		// ssaoEffectPass.uniforms[ 'lumInfluence' ].value = 0.0;
 		ssaoEffectPass.renderToScreen = true;
-		ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1;//testing
-		
+		ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1;//testing	
 		effectComposer.addPass( ssaoEffectPass );
 
 		oculusRenderer = new THREE.NumidiumOculusRiftEffect( renderer, camera, { worldFactor: 1 } );
@@ -159,7 +156,7 @@ NUMIDIUM.ViewController = function () {
 		else {
 			scene.overrideMaterial = depthMaterial;
 			renderer.render( scene, camera, depthRenderTarget );
-			// scene.overrideMaterial = null;
+			scene.overrideMaterial = null;
 			effectComposer.render();			
 		}
 	};
@@ -180,9 +177,9 @@ NUMIDIUM.ViewController = function () {
 		oculusRenderer.setSize( window.innerWidth, window.innerHeight );
 		
 		depthRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat } );
-		colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
+		// colorRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat } );
 
-		effectComposer.reset( colorRenderTarget );
+		// effectComposer.reset( colorRenderTarget );
 
 		ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
 		ssaoEffectPass.uniforms[ 'tDepth' ].texture = depthRenderTarget;
