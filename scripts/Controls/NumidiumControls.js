@@ -136,6 +136,10 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		if (Gamepad.supported) {
 			var pads = Gamepad.getStates();
 			var pad = pads[0]; // assume only 1 player.
+						
+			//Begining orientation for combining oculus & gamepad rotation
+			var yRotationStart = yawObject.rotation.y;
+			
 			if (pad) {
 				// adjust for deadzone.
 				if (Math.abs(pad.leftStickX) > 0.2){
@@ -182,6 +186,9 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 				
 				}
 			}
+						
+			//Set the y rotation delta to be used in NumidiumOculusControls
+			gamepadRotateObject.rotation.y = yawObject.rotation.y - yRotationStart;
 		}
 		
 		if ( scope.enabled === false ) {
