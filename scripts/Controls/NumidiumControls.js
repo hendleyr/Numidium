@@ -62,29 +62,28 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		if (canJump === true) {
 			// disable movement input if midair
 			switch ( event.keyCode ) {
-				//case 38: // up
-				case 87: // w
+				case 87: // W
 					moveForward = true;
 					break;
 
-				//case 37: // left
-				case 65: // a
+				case 65: // A
 					moveLeft = true;
 					break;
 
-				//case 40: // down
-				case 83: // s
+				case 83: // S
 					moveBackward = true;
 					break;
 
-				//case 39: // right
-				case 68: // d
+				case 68: // D
 					moveRight = true;
 					break;
 
 				case 32: // space
 					velocity.y += 2;	// jump velocity
 					canJump = false;
+					break;
+					
+				default:
 					break;
 			}
 		}
@@ -93,24 +92,27 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 
 	var onKeyUp = function ( event ) {
 		switch( event.keyCode ) {
-			//case 38: // up
-			case 87: // w
+			case 87: // W
 				moveForward = false;
 				break;
 
-			//case 37: // left
-			case 65: // a
+			case 65: // A
 				moveLeft = false;
 				break;
 
-			//case 40: // down
-			case 83: // a
+			case 83: // S
 				moveBackward = false;
 				break;
 
-			//case 39: // right
-			case 68: // d
+			case 68: // D
 				moveRight = false;
+				break;
+				
+			case 77: //M
+				toggleAudio();
+				break;
+				
+			default:
 				break;
 		}
 	};
@@ -179,14 +181,18 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					velocity.x += 0.06 * pad.leftStickX * delta;
 					velocity.z += 0.06 * pad.leftStickY * delta;
 				}
-				if ( pad.faceButton2 ) // X
-				if ( pad.faceButton3 ) // Y
+				if ( pad.faceButton2 ) {} // X
+				if ( pad.faceButton3 ) {} // Y
 					
-				if ( pad.select || pad.start ) {
+				if ( pad.select ) {
+					toggleAudio();
+				}
 				
+				if( pad.start ) {
+					location.reload();
 				}
 			}
-						
+
 			//Set the y rotation delta to be used in NumidiumOculusControls
 			gamepadRotateObject.rotation.y = yawObject.rotation.y - yRotationStart;
 		}

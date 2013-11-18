@@ -1,6 +1,7 @@
 // MAIN
 var container, scene, stats, collisionMesh;
 var viewController;
+var audioEnabled;
 
 var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
 
@@ -100,8 +101,13 @@ function init()
 	scene.add(ambientLight);
 	
 	// AUDIO
-	//var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
-	//scene.add( ambientAudio );
+	audioEnabled = true;
+	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+	scene.add( ambientAudio );
+}
+
+this.toggleAudio = function() {
+	audioEnabled = !audioEnabled;
 }
 
 function animate() 
@@ -120,4 +126,11 @@ function render()
 function update() {
 	viewController.update();
 	stats.update();
+	if(audioEnabled) {
+		//index number 5 seemed to be the AudioObject when I was debugging
+		//perhaps this is the wrong value to use here...
+		scene.children[5].setVolume(1);
+	} else {
+		scene.children[5].setVolume(0);
+	}
 }
