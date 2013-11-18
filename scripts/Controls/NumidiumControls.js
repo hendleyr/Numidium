@@ -36,6 +36,8 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	source.src = 'audio/Footsteps.wav';
 	audio.appendChild(source);
 	
+	//var audio = new THREE.SoundEffect('audio/Footsteps.wav');
+	
 
 	var canJump = false;
 
@@ -57,7 +59,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	};
 
 	var onKeyDown = function ( event ) {
-		audio.play();
 		if (canJump === true) {
 			// disable movement input if midair
 			switch ( event.keyCode ) {
@@ -87,6 +88,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					break;
 			}
 		}
+		
 	};
 
 	var onKeyUp = function ( event ) {
@@ -190,11 +192,22 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
 
 
-		if ( moveForward ) velocity.z -= 0.06 * delta;
-		if ( moveBackward ) velocity.z += 0.06 * delta;
-		if ( moveLeft ) velocity.x -= 0.06 * delta;
-		if ( moveRight ) velocity.x += 0.06 * delta;
-		
+		if ( moveForward ) {
+			velocity.z -= 0.06 * delta;
+			audio.play();
+		}
+		if ( moveBackward ) {
+			velocity.z += 0.06 * delta;
+			audio.play();
+		}
+		if ( moveLeft ) {
+			velocity.x -= 0.06 * delta;
+			audio.play();
+		}
+		if ( moveRight ) {
+			velocity.x += 0.06 * delta;
+			audio.play();
+		}
 
 		
 
