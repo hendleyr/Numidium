@@ -177,10 +177,16 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					velocity.y += 2;	// jump velocity
 					canJump=false;
 				}
+				if ( pad.leftStickButton ) {
+					velocity.x += 0.06 * pad.leftStickX * delta;
+					velocity.z += 0.06 * pad.leftStickY * delta;
+				}
+				
 				if ( pad.faceButton1 ) {// B
 					velocity.x += 0.06 * pad.leftStickX * delta;
 					velocity.z += 0.06 * pad.leftStickY * delta;
 				}
+				
 				if ( pad.faceButton2 ) {} // X
 				if ( pad.faceButton3 ) {} // Y
 					
