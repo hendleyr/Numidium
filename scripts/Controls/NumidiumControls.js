@@ -206,7 +206,6 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 		if ( scope.enabled === false ) {
 			return;
 		}
-		delta = 15;
 
 		velocity.x += ( - velocity.x ) * 0.08 * delta;
 		velocity.z += ( - velocity.z ) * 0.08 * delta;
@@ -235,7 +234,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 			velocity.y = Math.max( 0, velocity.y );
 		}
 		else {
-			velocity.y -= 0.025 * delta;
+			velocity.y -= 0.125 * delta;
 			velocity.y = Math.max(velocity.y, -2);
 		}
 		

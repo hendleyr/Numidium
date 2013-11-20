@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			#loadingScreen {
+				position:absolute;
+				width:100%;
+				height:100%;
+				background-color:#000;
+				color:#fff;
+				z-index:10;
+			}
+		
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+
+			body {
+				background-color: #ffffff;
+				margin: 0;
+				overflow: hidden;
+				font-family: arial;
+			}
+
+			#blocker {
+
+				position: absolute;
+
+				width: 100%;
+				height: 100%;
+
+				background-color: rgba(0,0,0,0.5);
+
+			}
+
+			#instructions {
+
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #ffffff;
+				text-align: center;
+
+				cursor: pointer;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="loadingScreen">Loading...</div>
+		<div id="blocker">
+			<div id="instructions">
+				<span style="font-size:40px">Click to begin</span>
+				<br />
+				Keyboard:
+				<br />
+				W, A, S, D = Move, SPACE = Jump, MOUSE = Look, ESCAPE = Pause
+				<br />
+				I / O / P = Anaglyph / Oculus / Projection Views
+				<br />
+				M = Mute/Unmute Audio
+				<br />
+				<br />
+				Gamepad:
+				<br />
+				Left stick = Move Position (Click to sprint)
+				<br />
+				Right stick = Look
+				<br />
+				Start = Refresh Page,   Select = Mute/Unmute Audio
+				<br />
+				D-Pad Left/Down/Right = Anaglyph / Oculus / Projection Views
+			</div>
+		</div>
+		<script>
+			//NAMESPACE
+			NUMIDIUM = {};
+		</script>
+		<script src="scripts/lib/three.js"></script>
+		<script src="scripts/lib/Detector.js"></script>
+		<script src="scripts/lib/stats.min.js"></script>
+		<script src="scripts/lib/Octree.js"></script>
+		<script src="scripts/effects/CopyShader.js"></script>
+		<script src="scripts/effects/SSAOShader.js"></script>
+		<script src="scripts/effects/EffectComposer.js"></script>
+		<script src="scripts/effects/RenderPass.js"></script>
+		<script src="scripts/effects/MaskPass.js"></script>		
+		<script src="scripts/effects/ShaderPass.js"></script>
+		<script src="scripts/loaders/OBJLoader.js"></script>
+		<script src="scripts/Controls/gamepad.js"></script>
+		<script src="scripts/Controls/NumidiumControls.js"></script>
+		<script src="scripts/Controls/NumidiumOculusControls.js"></script>
+		<script src="scripts/effects/NumidiumOculusRiftEffect.js"></script>
+		<script src="scripts/effects/NumidiumAnaglyphEffect.js"></script>
+		
+		<script>
+			var pointerLockAttach = function () {
+					var blocker = document.getElementById( 'blocker' );
+					//var instructions = document.getElementById( 'instructions' );
+
+					// http://www.html5rocks.com/en/tutorials/pointerlock/intro/
+
+					var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
+
+					if ( havePointerLock ) {
+						var element = document.body;
+
+						var pointerlockchange = function ( event ) {
+							if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+								kbamControls.enabled = true;
+
+								blocker.style.display = 'none';
+							} else {
+								kbamControls.enabled = false;
+
+								blocker.style.display = '-webkit-box';
+								blocker.style.display = '-moz-box';
+								blocker.style.display = 'box';
+								
+								instructions.style.display = '';
+							}
+						}
+
+						var pointerlockerror = function ( event ) {
+							instructions.style.display = '';
+						}
+
+						// Hook pointer lock state change events
+						document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
+						document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+						document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+						document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
+						
+						instructions.addEventListener( 'click', function ( event ) {
+						instructions.style.display = 'none';
+
+						// Ask the browser to lock the pointer
+						element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+
+						if ( /Firefox/i.test( navigator.userAgent ) ) {
+							var fullscreenchange = function ( event ) {
+								if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+									document.removeEventListener( 'fullscreenchange', fullscreenchange );
+									document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+
+									element.requestPointerLock();
+								}
+							}
+
+							document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+							document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+							element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+
+							element.requestFullscreen();
+
+						} else {
+							element.requestPointerLock();
+						}
+
+					}, false );
+				} else {
+					instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
+				}
+			};
+		
+			// workaround for chrome bug: http://code.google.com/p/chromium/issues/detail?id=35980#c12
+			if ( window.innerWidth === 0 ) { window.innerWidth = parent.innerWidth; window.innerHeight = parent.innerHeight; }
+
+			//SCENE
+			var scene, sceneGraph;
+			//CAMERA
+			var camera;
+			//RENDER
+			var renderer, anaglyphRenderer, oculusRenderer, stats;
+			var	isAnaglyph = false, isOculus = false;
+			//POST PROCESSING
+			var depthMaterial, depthTarget, ssaoEffectPass, effectComposer;
+			//SKYBOX
+			//GEOMETRY
+			var collisionMesh
+			//CONTROLS
+			var kBamControls, oculusControls;
+			var  time = Date.now(), clock = new THREE.Clock();
+
+			init();
+			animate();
+
+			function initScene() {
+				scene = new THREE.Scene();
+				scene.fog = new THREE.FogExp2( 0x38332D, 0.00075 );
+				scene.add( new THREE.AmbientLight( 0x423433 ) );
+				
+				var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
+				directionalLight.position.set( -1500, 1100, 1200 );
+				directionalLight.castShadow = true;
+				directionalLight.shadowCascadeCount = 8;
+				directionalLight.shadowCascadeWidth = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
+				directionalLight.shadowCascadeHeight = [256, 512, 512, 512, 1024, 1024, 1024, 1024];
+				directionalLight.shadowCascadeNearZ = [-0.1, 0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999];
+				directionalLight.shadowCascadeFarZ  = [0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999, 1.00];
+				directionalLight.shadowCascadeBias = [0.005, 0.005, 0.005, 0.005, 0.004, 0.0065, 0.0065, 0.0065];
+				// directionalLight.shadowCascadeOffset.z = -100;
+				directionalLight.shadowCascade = true;
+				// directionalLight.shadowCameraVisible = true;
+				directionalLight.shadowDarkness = 0.5;
+				scene.add( directionalLight );
+				
+				sceneGraph = new THREE.Octree( {
+					// scene: scene,
+					undeferred: true,
+					depthMax: Infinity,
+					objectsThreshold: 128,
+					overlapPct: 0.25
+				} );
+			};			
+			function initCamera() {
+				var viewAngle = 45;
+				var aspectRatio = window.innerWidth / window.innerHeight;
+				var nearClip = 1;
+				var farClip = 10000;
+				camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, nearClip, farClip);
+			};			
+			function initRenderer() {
+				if ( Detector.webgl ) {
+					renderer = new THREE.WebGLRenderer();
+				}
+				else {
+					renderer = new THREE.CanvasRenderer();
+				}
+				
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				document.body.appendChild( renderer.domElement );
+				
+				stats = new Stats();
+				stats.domElement.style.position = 'absolute';
+				stats.domElement.style.bottom = '0px';
+				stats.domElement.style.zIndex = 100;
+				document.body.appendChild( stats.domElement );
+				
+				renderer.shadowMapEnabled = true;
+				renderer.shadowMapCascade = true;
+				//renderer.shadowMapType = THREE.BasicShadowMap;	// best performance
+				renderer.shadowMapType = THREE.PCFShadowMap;
+				//renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
+				
+				oculusRenderer = new NUMIDIUM.OculusRiftEffect( renderer, camera, { worldFactor: 1 } );
+				anaglyphRenderer = new NUMIDIUM.AnaglyphEffect( renderer, window.innerWidth, window.innerHeight );
+				
+				document.addEventListener( 'keydown', onKeyDown, false );
+				window.addEventListener( 'resize', onWindowResize, false );
+			};
+			function initPostProcessing() {
+				var depthShader = THREE.ShaderLib[ "depthRGBA" ];
+				var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
+				depthMaterial = new THREE.ShaderMaterial( { fragmentShader: depthShader.fragmentShader, vertexShader: depthShader.vertexShader, uniforms: depthUniforms } );
+				depthMaterial.blending = THREE.NoBlending;
+				
+				effectComposer = new THREE.EffectComposer( renderer );
+				effectComposer.addPass( new THREE.RenderPass( scene, camera ) );
+
+				depthTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+				
+				ssaoEffectPass = new THREE.ShaderPass( THREE.SSAOShader );
+				ssaoEffectPass.uniforms[ 'tDepth' ].value = depthTarget;
+				ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
+				ssaoEffectPass.uniforms[ 'cameraNear' ].value = camera.near;
+				ssaoEffectPass.uniforms[ 'cameraFar' ].value = camera.far;
+				ssaoEffectPass.uniforms[ 'aoClamp' ].value = 1.0;
+				ssaoEffectPass.uniforms[ 'lumInfluence' ].value = 0.5;
+				//ssaoEffectPass.uniforms[ 'fogEnabled' ].value = 1;
+				//ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1.0;
+				ssaoEffectPass.renderToScreen = true;
+				effectComposer.addPass( ssaoEffectPass );
+			};
+			function initSkyBox() {
+				var skyBoxFaces = [
+					'textures/skyBox/px.jpg', 
+					'textures/skyBox/nx.jpg',
+					'textures/skyBox/py.jpg',
+					'textures/skyBox/ny.jpg',
+					'textures/skyBox/pz.jpg',
+					'textures/skyBox/nz.jpg'
+				];
+				var textureCube = THREE.ImageUtils.loadTextureCube( skyBoxFaces, new THREE.CubeRefractionMapping() );
+				var shader = THREE.ShaderLib[ "cube" ];
+				shader.uniforms[ "tCube" ].value = textureCube;
+				var skyBoxMaterial = new THREE.ShaderMaterial( {
+					fragmentShader: shader.fragmentShader,
+					vertexShader: shader.vertexShader,
+					uniforms: shader.uniforms,
+					side: THREE.BackSide
+				} );
+				
+				var skyBoxGeometry = new THREE.CubeGeometry( 10000, 10000, 10000 );
+				var skyBoxMesh = new THREE.Mesh( skyBoxGeometry, skyBoxMaterial );
+				scene.add(skyBoxMesh);
+			};
+			function loadGeometry() {
+				var loader = new THREE.OBJLoader( );
+				loader.load( 'models/FirelinkShrine/FirelinkShrine.obj', function ( object ) {
+					object.scale.set( 10, 10, 10 );
+					collisionMesh = object;
+					collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
+					
+						collisionMesh.castShadow = true;
+						collisionMesh.receiveShadow = true;
+						
+						// set the mesh to cast/receive shadows
+						collisionMesh.children[0].children[0].castShadow = true;
+						collisionMesh.children[0].children[0].receiveShadow = true;
+					
+					scene.add( object );
+					sceneGraph.add( collisionMesh.children[0].children[0], { useFaces: true } );
+					kbamControls.sceneGraph = sceneGraph;
+					document.getElementById( "loadingScreen" ).style.display = "none";
+				} );
+			};
+			function initControls() {
+				oculusControls = new NUMIDIUM.OculusControls( camera );
+				kbamControls = new NUMIDIUM.NumidiumControls( camera );				
+				kbamControls.getObject().position.set( 591, -150, -524 );
+				scene.add( kbamControls.getObject() );
+				pointerLockAttach();
+			};
+			function init() {
+				initScene();
+				initCamera();
+				initRenderer();
+				initPostProcessing();
+				initSkyBox();
+				loadGeometry();
+				initControls();
+			};
+
+			function animate() {
+				requestAnimationFrame( animate );
+				
+				stats.update();
+				sceneGraph.update();
+				kbamControls.update( Date.now() - time );
+				oculusControls.update( clock.getDelta(), kbamControls.getGamepadRotate() );
+				
+				if ( isAnaglyph ) {
+					renderer.autoClear = false;
+					anaglyphRenderer.render( scene, camera );
+				}
+				else if (isOculus) {
+					renderer.autoClear = false;
+					oculusRenderer.render( scene, camera );
+				}
+				else {
+					renderer.autoClear = true;
+					scene.overrideMaterial = depthMaterial;
+					renderer.render( scene, camera, depthTarget );
+
+					scene.overrideMaterial = null;
+					effectComposer.render();		
+				}
+				
+				time = Date.now();				
+			};
+			
+			function onWindowResize () {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				anaglyphRenderer.setSize( window.innerWidth, window.innerHeight );
+				oculusRenderer.setSize( window.innerWidth, window.innerHeight );
+				
+				depthRenderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat } );
+
+				ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
+				ssaoEffectPass.uniforms[ 'tDepth' ].texture = depthRenderTarget;				
+			};
+			
+			function onKeyDown ( event ) {
+				console.log( event.keyCode );
+				switch ( event.keyCode ) {
+					case 73:	//i
+						isAnaglyph = true;
+						isOculus = false;
+						renderer.shadowMapAutoUpdate = false;	// prevent updating shadow map with right eye data
+						oculusControls.freeze = true;
+						onWindowResize();
+						break;
+					case 79:	//o
+						isAnaglyph = false;
+						isOculus = true;
+						renderer.shadowMapAutoUpdate = true;
+						oculusControls.connect();	// send a GET to http://localhost:50000/
+						oculusControls.freeze = false;
+						onWindowResize();
+						break;
+					case 80:	//p
+						isAnaglyph = false;
+						isOculus = false;
+						renderer.shadowMapAutoUpdate = true;
+						oculusControls.freeze = true;
+						onWindowResize();
+						break;
+				}
+			};
+
+		</script>
+	</body>
+</html>

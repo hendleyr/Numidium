@@ -1,12 +1,13 @@
 /**
  * @author troffmo5 / http://github.com/troffmo5
+ * @edited by Thomas Grelecki, Derek Ison, Richard Hendley, Ger Her
  *
  * Effect to render the scene in stereo 3d side by side with lens distortion.
  * It is written to be used with the Oculus Rift (http://www.oculusvr.com/) but
  * it works also with other HMD using the same technology
  */
 
-THREE.NumidiumOculusRiftEffect = function ( renderer, camera, options ) {
+NUMIDIUM.OculusRiftEffect = function ( renderer, camera, options ) {
 	// worldFactor indicates how many units is 1 meter
 	var worldFactor = (options && options.worldFactor) ? options.worldFactor: 1.0;
 
@@ -25,8 +26,8 @@ THREE.NumidiumOculusRiftEffect = function ( renderer, camera, options ) {
 	};
 
 	// Perspective camera
-	//var pCamera = new THREE.PerspectiveCamera();
 	var pCamera = camera;
+	
 	pCamera.matrixAutoUpdate = false;
 	pCamera.target = new THREE.Vector3();
 

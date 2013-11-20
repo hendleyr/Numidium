@@ -1,4 +1,3 @@
-var NUMIDIUM = {};
 var clock = new THREE.Clock();
 var time = Date.now();
 
@@ -44,14 +43,14 @@ NUMIDIUM.ViewController = function () {
 		renderer.shadowMapEnabled = true;
 		renderer.shadowMapType = THREE.PCFShadowMap;
 		
-		oculusRenderer = new THREE.NumidiumOculusRiftEffect( renderer, camera, {worldFactor: 1} );
-		anaglyphRenderer = new THREE.AnaglyphEffect(  renderer, window.innerWidth, window.innerHeight );
+		oculusRenderer = new NUMIDIUM.OculusRiftEffect( renderer, camera, {worldFactor: 1} );
+		anaglyphRenderer = new NUMIDIUM.AnaglyphEffect(  renderer, window.innerWidth, window.innerHeight );
 
 		document.addEventListener( 'keydown', onKeyDown, false );
 		window.addEventListener('resize', onWindowResize, false);
 		
 		// CONTROLS
-		oculusControls = new THREE.NumidiumOculusControls(camera);
+		oculusControls = new NUMIDIUM.OculusControls(camera);
 		kbamControls = new NUMIDIUM.NumidiumControls(camera);
 		kbamControls.sceneGraph = this.sceneGraph;
 		kbamControls.getObject().position.set(872,-82,-261);

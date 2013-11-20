@@ -6,7 +6,7 @@
  *   coordinates from the rift: http://github.com/possan/oculus-rest
  */
 
-THREE.NumidiumOculusControls = function ( object ) {
+NUMIDIUM.OculusControls = function ( object ) {
 	var yTotalRotation  = 0;
 	var scope = this;
 	this.object = object;
