@@ -78,6 +78,8 @@
 				<br />
 				M = Mute/Unmute Audio
 				<br />
+				{Experimental: 1 = disable shadow mapping (normal view mode only)
+				<br />
 				<br />
 				Gamepad:
 				<br />
@@ -188,7 +190,7 @@
 			if ( window.innerWidth === 0 ) { window.innerWidth = parent.innerWidth; window.innerHeight = parent.innerHeight; }
 
 			//SCENE
-			var scene, sceneGraph;
+			var scene, sceneGraph, directionalLight;
 			//CAMERA
 			var camera;
 			//RENDER
@@ -211,7 +213,7 @@
 				scene.fog = new THREE.FogExp2( 0x38332D, 0.00075 );
 				scene.add( new THREE.AmbientLight( 0x423433 ) );
 				
-				var directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
+				directionalLight = new THREE.DirectionalLight( 0xfefdbc, 0.5 );
 				directionalLight.position.set( -1500, 1100, 1200 );
 				directionalLight.castShadow = true;
 				directionalLight.shadowCascadeCount = 8;
@@ -220,7 +222,6 @@
 				directionalLight.shadowCascadeNearZ = [-0.1, 0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999];
 				directionalLight.shadowCascadeFarZ  = [0.65, 0.70, 0.95, 0.96, 0.99, 0.999, 0.9999, 1.00];
 				directionalLight.shadowCascadeBias = [0.005, 0.005, 0.005, 0.005, 0.004, 0.0065, 0.0065, 0.0065];
-				// directionalLight.shadowCascadeOffset.z = -100;
 				directionalLight.shadowCascade = true;
 				// directionalLight.shadowCameraVisible = true;
 				directionalLight.shadowDarkness = 0.5;
@@ -258,11 +259,12 @@
 				stats.domElement.style.zIndex = 100;
 				document.body.appendChild( stats.domElement );
 				
+				renderer.setClearColor( new THREE.Color("black") );
 				renderer.shadowMapEnabled = true;
 				renderer.shadowMapCascade = true;
 				//renderer.shadowMapType = THREE.BasicShadowMap;	// best performance
-				renderer.shadowMapType = THREE.PCFShadowMap;
-				//renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
+				//renderer.shadowMapType = THREE.PCFShadowMap;
+				renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
 				
 				oculusRenderer = new NUMIDIUM.OculusRiftEffect( renderer, camera, { worldFactor: 1 } );
 				anaglyphRenderer = new NUMIDIUM.AnaglyphEffect( renderer, window.innerWidth, window.innerHeight );
@@ -375,7 +377,7 @@
 					renderer.render( scene, camera, depthTarget );
 
 					scene.overrideMaterial = null;
-					effectComposer.render();		
+					effectComposer.render();
 				}
 				
 				time = Date.now();				
@@ -398,6 +400,20 @@
 			function onKeyDown ( event ) {
 				console.log( event.keyCode );
 				switch ( event.keyCode ) {
+					case 49:
+						renderer.shadowMapAutoUpdate = false;
+						renderer.clearTarget( directionalLight.shadowMap );
+						for( var i = 0; i < directionalLight.shadowCascadeArray.length; i++ ) {
+							renderer.clearTarget( directionalLight.shadowCascadeArray[i].shadowMap );
+						}
+						
+						break;
+					case 50:
+						break;
+					case 51:
+						break;
+					
+				
 					case 73:	//i
 						isAnaglyph = true;
 						isOculus = false;
