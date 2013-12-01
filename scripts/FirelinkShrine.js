@@ -127,10 +127,16 @@ function update() {
 	viewController.update();
 	stats.update();
 	if(audioEnabled) {
-		//index number 5 seemed to be the AudioObject when I was debugging
-		//perhaps this is the wrong value to use here...
-		scene.children[5].setVolume(1);
+		for (var i=0;i<scene.children.length;i++) { 
+			if (scene.children[i].setVolume) {
+				scene.children[i].setVolume(1);
+			}
+		}
 	} else {
-		scene.children[5].setVolume(0);
+		for (var i=0;i<scene.children.length;i++) { 
+			if (scene.children[i].setVolume) {
+				scene.children[i].setVolume(0);
+			}
+		}
 	}
 }
