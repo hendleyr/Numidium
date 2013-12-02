@@ -207,7 +207,7 @@
 			//SCENE
 			var scene, sceneGraph, directionalLight;
 			//AUDIO
-			var ambientAudio;
+			var ambientAudio, audioEnabled;
 			//CAMERA
 			var camera;
 			//RENDER
@@ -253,7 +253,8 @@
 				} );
 			};
 			function initAudio() {
-				ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+				audioEnabled = true;
+				ambientAudio = new THREE.AudioObject('audio/Wind.mp3');				
 				scene.add( ambientAudio );
 			}
 			function initCamera() {
@@ -382,6 +383,20 @@
 			function animate() {
 				requestAnimationFrame( animate );
 				
+				if(audioEnabled) {
+					for (var i=0;i<scene.children.length;i++) { 
+						if (scene.children[i].setVolume) {
+							scene.children[i].setVolume(1);
+						}
+					}
+				} else {
+					for (var i=0;i<scene.children.length;i++) { 
+						if (scene.children[i].setVolume) {
+							scene.children[i].setVolume(0);
+						}
+					}
+				}
+				
 				stats.update();
 				sceneGraph.update();
 				kbamControls.update( Date.now() - time );
@@ -406,6 +421,10 @@
 				}
 				
 				time = Date.now();				
+			};
+			
+			toggleAudio = function() {
+				audioEnabled = !audioEnabled;
 			};
 			
 			function onWindowResize () {

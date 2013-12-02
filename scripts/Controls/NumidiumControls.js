@@ -34,10 +34,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var audio = document.createElement('audio');
 	var source = document.createElement('source');
 	source.src = 'audio/Footsteps.wav';
-	audio.appendChild(source);
-	
-	//var audio = new THREE.SoundEffect('audio/Footsteps.wav');
-	
+	audio.appendChild(source);	
 
 	var canJump = false;
 
