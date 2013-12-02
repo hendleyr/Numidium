@@ -103,6 +103,8 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 	 */
 
 	this.render = function ( scene, camera ) {
+		var isShadowMappingEnabled = renderer.shadowMapAutoUpdate;
+		renderer.shadowMapAutoUpdate = false;//disable updating shadow maps while in anaglyph rendering
 
 		scene.updateMatrixWorld();
 
@@ -150,7 +152,10 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 
 		}
 		
-		renderer.shadowMapPlugin.update(  scene, camera );//update only with 'real' camera values; autoupdate disabled while in anaglyph
+		if ( isShadowMappingEnabled ) {
+			renderer.shadowMapPlugin.update(  scene, camera );//update only with 'real' camera values; autoupdate disabled while in anaglyph
+		}
+		
 		_cameraL.matrixWorld.copy( camera.matrixWorld ).multiply( eyeLeft );
 		_cameraL.position.copy( camera.position );
 		_cameraL.near = camera.near;
@@ -166,6 +171,7 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 		renderer.render( scene, _cameraR, _renderTargetR, true );
 
 		renderer.render( _scene, _camera );
+		renderer.shadowMapAutoUpdate = isShadowMappingEnabled;//restore original setting for renderer shadow mapping
 	};
 
 	this.dispose = function() {

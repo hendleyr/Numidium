@@ -70,26 +70,40 @@
 			<div id="instructions">
 				<span style="font-size:40px">Click to begin</span>
 				<br />
-				Keyboard:
+				Keyboard and Mouse:
 				<br />
-				W, A, S, D = Move, SPACE = Jump, MOUSE = Look, ESCAPE = Pause
+				W, A, S, D = Move Position
 				<br />
-				I / O / P = Anaglyph / Oculus / Projection Views
+				SPACE = Jump
 				<br />
-				M = Mute/Unmute Audio
+				MOUSE = Look
 				<br />
-				{Experimental: 1 = disable shadow mapping (normal view mode only)
+				ESCAPE = Pause, M = Mute/Unmute Audio
+				<br />
+				I / O / P = Anaglyph / Oculus / Projection Views				
+				
 				<br />
 				<br />
+				
 				Gamepad:
 				<br />
 				Left stick = Move Position (Click to sprint)
+				<br />
+				A = Jump
 				<br />
 				Right stick = Look
 				<br />
 				Start = Refresh Page,   Select = Mute/Unmute Audio
 				<br />
 				D-Pad Left/Down/Right = Anaglyph / Oculus / Projection Views
+				
+				<br />				
+				<br />
+				
+				Display Options:
+				<br />
+				1 = Toggle Hi-Quality Shadows
+
 			</div>
 		</div>
 		<script>
@@ -98,6 +112,7 @@
 		</script>
 		<script src="scripts/lib/three.js"></script>
 		<script src="scripts/lib/Detector.js"></script>
+		<script src="scripts/AudioObject.js"></script>
 		<script src="scripts/lib/stats.min.js"></script>
 		<script src="scripts/lib/Octree.js"></script>
 		<script src="scripts/effects/CopyShader.js"></script>
@@ -191,14 +206,16 @@
 
 			//SCENE
 			var scene, sceneGraph, directionalLight;
+			//AUDIO
+			var ambientAudio;
 			//CAMERA
 			var camera;
 			//RENDER
 			var renderer, anaglyphRenderer, oculusRenderer, stats;
 			var	isAnaglyph = false, isOculus = false;
+			var highQualityShadows = true;
 			//POST PROCESSING
 			var depthMaterial, depthTarget, ssaoEffectPass, effectComposer;
-			//SKYBOX
 			//GEOMETRY
 			var collisionMesh
 			//CONTROLS
@@ -234,14 +251,25 @@
 					objectsThreshold: 128,
 					overlapPct: 0.25
 				} );
-			};			
+			};
+			function initAudio() {
+				ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
+				scene.add( ambientAudio );
+			}
 			function initCamera() {
 				var viewAngle = 45;
 				var aspectRatio = window.innerWidth / window.innerHeight;
 				var nearClip = 1;
 				var farClip = 10000;
 				camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, nearClip, farClip);
-			};			
+			};
+			function initStats() {
+				stats = new Stats();
+				stats.domElement.style.position = 'absolute';
+				stats.domElement.style.bottom = '0px';
+				stats.domElement.style.zIndex = 100;
+				document.body.appendChild( stats.domElement );
+			};
 			function initRenderer() {
 				if ( Detector.webgl ) {
 					renderer = new THREE.WebGLRenderer();
@@ -252,12 +280,6 @@
 				
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
-				
-				stats = new Stats();
-				stats.domElement.style.position = 'absolute';
-				stats.domElement.style.bottom = '0px';
-				stats.domElement.style.zIndex = 100;
-				document.body.appendChild( stats.domElement );
 				
 				renderer.setClearColor( new THREE.Color("black") );
 				renderer.shadowMapEnabled = true;
@@ -288,7 +310,7 @@
 				ssaoEffectPass.uniforms[ 'size' ].value.set( window.innerWidth, window.innerHeight );
 				ssaoEffectPass.uniforms[ 'cameraNear' ].value = camera.near;
 				ssaoEffectPass.uniforms[ 'cameraFar' ].value = camera.far;
-				ssaoEffectPass.uniforms[ 'aoClamp' ].value = 1.0;
+				ssaoEffectPass.uniforms[ 'aoClamp' ].value = 0.5;
 				ssaoEffectPass.uniforms[ 'lumInfluence' ].value = 0.5;
 				//ssaoEffectPass.uniforms[ 'fogEnabled' ].value = 1;
 				//ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1.0;
@@ -347,7 +369,9 @@
 			};
 			function init() {
 				initScene();
+				initAudio();
 				initCamera();
+				initStats();
 				initRenderer();
 				initPostProcessing();
 				initSkyBox();
@@ -362,6 +386,7 @@
 				sceneGraph.update();
 				kbamControls.update( Date.now() - time );
 				oculusControls.update( clock.getDelta(), kbamControls.getGamepadRotate() );
+				renderer.shadowMapAutoUpdate = highQualityShadows;
 				
 				if ( isAnaglyph ) {
 					renderer.autoClear = false;
@@ -401,12 +426,13 @@
 				console.log( event.keyCode );
 				switch ( event.keyCode ) {
 					case 49:
-						renderer.shadowMapAutoUpdate = false;
-						renderer.clearTarget( directionalLight.shadowMap );
-						for( var i = 0; i < directionalLight.shadowCascadeArray.length; i++ ) {
-							renderer.clearTarget( directionalLight.shadowCascadeArray[i].shadowMap );
+						highQualityShadows = !highQualityShadows;
+						if ( !highQualityShadows ) {
+							renderer.clearTarget( directionalLight.shadowMap );
+							for( var i = 0; i < directionalLight.shadowCascadeArray.length; i++ ) {
+								renderer.clearTarget( directionalLight.shadowCascadeArray[i].shadowMap );
+							}
 						}
-						
 						break;
 					case 50:
 						break;
@@ -417,14 +443,12 @@
 					case 73:	//i
 						isAnaglyph = true;
 						isOculus = false;
-						renderer.shadowMapAutoUpdate = false;	// prevent updating shadow map with right eye data
 						oculusControls.freeze = true;
 						onWindowResize();
 						break;
 					case 79:	//o
 						isAnaglyph = false;
 						isOculus = true;
-						renderer.shadowMapAutoUpdate = true;
 						oculusControls.connect();	// send a GET to http://localhost:50000/
 						oculusControls.freeze = false;
 						onWindowResize();
@@ -432,7 +456,6 @@
 					case 80:	//p
 						isAnaglyph = false;
 						isOculus = false;
-						renderer.shadowMapAutoUpdate = true;
 						oculusControls.freeze = true;
 						onWindowResize();
 						break;
