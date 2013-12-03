@@ -11,6 +11,16 @@ animate();
 // FUNCTIONS
 function init()
 {
+	//An alert to get Google Chrome, if not in use
+	var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+    if (!is_chrome) {
+		var r=confirm("It looks as though you are using a browser other than Google Chrome.\nWe recommend using Chrome for best performance.\n\nClick OK to navigate away from this site and visit the Google Chrome download page.\n\nClick Cancel to continue anyway...");
+		if (r==true) {
+			window.location.href="http://www.google.com/chrome?";
+		}
+		// alert("It looks as though you aren't using Google Chrome.\nWe recommend using Chrome for best performance.\n\nTo download, navigate your browser to www.google.com/chrome.");
+    }
+	
 	// SCENE
 	scene = new THREE.Scene();
 	scene.fog = new THREE.FogExp2( 0x9999ff, 0.00075 );
@@ -101,7 +111,7 @@ function init()
 	scene.add(ambientLight);
 	
 	// AUDIO
-	audioEnabled = true;
+	audioEnabled = false;
 	var ambientAudio = new THREE.AudioObject('audio/Wind.mp3');
 	scene.add( ambientAudio );
 }
