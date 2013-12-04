@@ -102,7 +102,13 @@
 				
 				Display Options:
 				<br />
-				1 = Toggle Hi-Quality Shadows
+				1   = Toggle Hi-Quality Shadows
+				<br />
+				2   = Cycle Shadow Edge Enhancement
+				<br />
+				3   = Toggle Ambient Occlusion
+				<br />
+				+/- = Increase/Decrease View Distance
 
 			</div>
 		</div>
@@ -444,7 +450,7 @@
 			function onKeyDown ( event ) {
 				console.log( event.keyCode );
 				switch ( event.keyCode ) {
-					case 49:
+					case 49:	//1
 						highQualityShadows = !highQualityShadows;
 						if ( !highQualityShadows ) {
 							renderer.clearTarget( directionalLight.shadowMap );
@@ -453,12 +459,21 @@
 							}
 						}
 						break;
-					case 50:
+					case 50:	//2
+						// cycle through shadow map types
+						renderer.shadowMapType = (renderer.shadowMapType + 1) % 3;
+						//0 = THREE.BasicShadowMap
+						//1 = THREE.PCFShadowMap
+						//2 = THREE.PCFSoftShadowMap
+						
+						// force update of baked materials
+						collisionMesh.children[0].children[0].material.needsUpdate = true;			
+						//TODO: this is making assumptions about the hierarchy of meshes and materials in the scene, which could break
+						// on more complex arrangements (eg medieval city)
 						break;
-					case 51:
-						break;
-					
-				
+					case 51:	//3
+						//TODO: toggle SSAO shader
+						break;				
 					case 73:	//i
 						isAnaglyph = true;
 						isOculus = false;
@@ -477,6 +492,10 @@
 						isOculus = false;
 						oculusControls.freeze = true;
 						onWindowResize();
+						break;
+					case 187:	//+
+						break;
+					case 189:	//-
 						break;
 				}
 			};
