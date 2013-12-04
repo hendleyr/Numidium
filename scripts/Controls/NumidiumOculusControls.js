@@ -29,7 +29,11 @@ NUMIDIUM.OculusControls = function ( object ) {
 					else {
 						// we failed to get an orientation from oculus-rest; freeze our controls
 						// and let kbam take over
-						scope.freeze = true;						
+						scope.freeze = true;
+						var r=confirm("It looks as though you don't have an oculus-rest server running locally.\nThis will be required in order for the head tracking feature to work properly.\n\nClick OK to navigate away from this site and visit the oculus-rest GitHub repository.\n\nClick Cancel to continue without it...");
+						if (r==true) {
+							window.location.href="https://github.com/possan/oculus-rest";
+						}
 					}
 				}
 			}
