@@ -222,6 +222,7 @@
 			var highQualityShadows = true;
 			//POST PROCESSING
 			var depthMaterial, depthTarget, ssaoEffectPass, effectComposer;
+			var aoSupported = true, aoEnabled = true;
 			//GEOMETRY
 			var collisionMesh
 			//CONTROLS
@@ -302,6 +303,13 @@
 				window.addEventListener( 'resize', onWindowResize, false );
 			};
 			function initPostProcessing() {
+				//SSAO only supported by Windows PCs
+				if( navigator.platform.indexOf( "Mac" ) != -1 ) {
+					console.log( "Disabling SSAO for Macintosh PC..." );
+					aoSupported = false;
+					aoEnabled = false;
+				}
+			
 				var depthShader = THREE.ShaderLib[ "depthRGBA" ];
 				var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
 				depthMaterial = new THREE.ShaderMaterial( { fragmentShader: depthShader.fragmentShader, vertexShader: depthShader.vertexShader, uniforms: depthUniforms } );
@@ -419,11 +427,17 @@
 				}
 				else {
 					renderer.autoClear = true;
-					scene.overrideMaterial = depthMaterial;
-					renderer.render( scene, camera, depthTarget );
-
-					scene.overrideMaterial = null;
-					effectComposer.render();
+					if( aoSupported && aoEnabled ) {
+						scene.overrideMaterial = depthMaterial;
+						renderer.render( scene, camera, depthTarget );
+						scene.overrideMaterial = null;
+						effectComposer.render();
+					}
+					else {
+						renderer.render(scene, camera);
+					}
+					
+					
 				}
 				
 				time = Date.now();				
@@ -472,7 +486,11 @@
 						// on more complex arrangements (eg medieval city)
 						break;
 					case 51:	//3
-						//TODO: toggle SSAO shader
+						//toggle SSAO shader
+						aoEnabled = !aoEnabled;
+						if ( !aoEnabled ) {
+							renderer.clearTarget( depthTarget );
+						}
 						break;				
 					case 73:	//i
 						isAnaglyph = true;
@@ -492,7 +510,11 @@
 						isOculus = false;
 						oculusControls.freeze = true;
 						onWindowResize();
+						break;					
+					case 107:	//+
 						break;
+					case 109:	//-
+						break;					
 					case 187:	//+
 						break;
 					case 189:	//-
