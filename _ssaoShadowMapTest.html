@@ -93,7 +93,7 @@
 				<br />
 				Right stick = Look
 				<br />
-				Start = Refresh Page,   Select = Mute/Unmute Audio
+				Start = Refresh Page, Select = Mute/Unmute Audio
 				<br />
 				D-Pad Left/Down/Right = Anaglyph / Oculus / Projection Views
 				
@@ -102,13 +102,11 @@
 				
 				Display Options:
 				<br />
-				1   = Toggle Hi-Quality Shadows
+				1 = Toggle Hi-Quality Shadows
 				<br />
-				2   = Cycle Shadow Edge Enhancement
+				2 = Cycle Shadow Edge Enhancement
 				<br />
-				3   = Toggle Ambient Occlusion
-				<br />
-				+/- = Increase/Decrease View Distance
+				3 = Toggle Ambient Occlusion
 
 			</div>
 		</div>
@@ -295,10 +293,7 @@
 				//renderer.shadowMapType = THREE.BasicShadowMap;	// best performance
 				//renderer.shadowMapType = THREE.PCFShadowMap;
 				renderer.shadowMapType = THREE.PCFSoftShadowMap;	// best quality
-				
-				oculusRenderer = new NUMIDIUM.OculusRiftEffect( renderer, camera, { worldFactor: 1 } );
-				anaglyphRenderer = new NUMIDIUM.AnaglyphEffect( renderer, window.innerWidth, window.innerHeight );
-				
+
 				document.addEventListener( 'keydown', onKeyDown, false );
 				window.addEventListener( 'resize', onWindowResize, false );
 			};
@@ -331,6 +326,9 @@
 				//ssaoEffectPass.uniforms[ 'onlyAO' ].value = 1.0;
 				ssaoEffectPass.renderToScreen = true;
 				effectComposer.addPass( ssaoEffectPass );
+				
+				oculusRenderer = new NUMIDIUM.OculusRiftEffect( renderer, camera, { worldFactor: 1 } );
+				anaglyphRenderer = new NUMIDIUM.AnaglyphEffect( renderer, window.innerWidth, window.innerHeight );
 			};
 			function initSkyBox() {
 				var skyBoxFaces = [
@@ -435,9 +433,7 @@
 					}
 					else {
 						renderer.render(scene, camera);
-					}
-					
-					
+					}				
 				}
 				
 				time = Date.now();				

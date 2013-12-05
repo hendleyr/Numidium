@@ -29,7 +29,6 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 
 	var _renderTargetL = new THREE.WebGLRenderTarget( width, height, _params );
 	var _renderTargetR = new THREE.WebGLRenderTarget( width, height, _params );
-
 	var _material = new THREE.ShaderMaterial( {
 
 		uniforms: {
@@ -75,6 +74,35 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 		].join("\n")
 
 	} );
+	
+	//SSAO effect
+	var _depthTargetL = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+	var _depthTargetR = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+	
+	var _ssaoL = new THREE.ShaderPass( THREE.SSAOShader );
+	_ssaoL.uniforms[ 'tDepth' ].value = _depthTargetL;
+	_ssaoL.uniforms[ 'size' ].value.set( width, height );
+	_ssaoL.uniforms[ 'cameraNear' ].value = camera.near;
+	_ssaoL.uniforms[ 'cameraFar' ].value = camera.far;
+	_ssaoL.uniforms[ 'aoClamp' ].value = 0.5;
+	_ssaoL.renderToScreen = false;
+	
+	var _ssaoR = new THREE.ShaderPass( THREE.SSAOShader );
+	_ssaoR.uniforms[ 'tDepth' ].value = _depthTargetR;
+	_ssaoR.uniforms[ 'size' ].value.set( width, height );
+	_ssaoR.uniforms[ 'cameraNear' ].value = camera.near;
+	_ssaoR.uniforms[ 'cameraFar' ].value = camera.far;
+	_ssaoR.uniforms[ 'aoClamp' ].value = 0.5;
+	_ssaoR.renderToScreen = true;
+	
+	var _anaglyphPass = new THREE.ShaderPass( _material );
+	_anaglyphPass.renderToScreen = true;
+
+	var _eC = new THREE.EffectComposer( renderer );
+	_eC.addPass( new THREE.RenderPass( _scene, _camera ) );
+	_eC.addPass( _ssaoL );
+	_eC.addPass( _ssaoR );
+	//_eC.addPass( _anaglyphPass );
 
 	var mesh = new THREE.Mesh( new THREE.PlaneGeometry( 2, 2 ), _material );
 	_scene.add( mesh );
@@ -83,11 +111,18 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 
 		if ( _renderTargetL ) _renderTargetL.dispose();
 		if ( _renderTargetR ) _renderTargetR.dispose();
+		if ( _depthTargetL ) _depthTargetL.dispose();
+		if ( _depthTargetR ) _depthTargetR.dispose();
+		
 		_renderTargetL = new THREE.WebGLRenderTarget( width, height, _params );
 		_renderTargetR = new THREE.WebGLRenderTarget( width, height, _params );
+		_depthTargetL = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+		_depthTargetR = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
 
 		_material.uniforms[ "mapLeft" ].value = _renderTargetL;
 		_material.uniforms[ "mapRight" ].value = _renderTargetR;
+		_ssaoL.uniforms[ 'tDepth' ].value = _depthTargetL;
+		_ssaoR.uniforms[ 'tDepth' ].value = _depthTargetR;
 
 		renderer.setSize( width, height );
 
@@ -153,7 +188,7 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 		}
 		
 		if ( isShadowMappingEnabled ) {
-			renderer.shadowMapPlugin.update(  scene, camera );//update only with 'real' camera values; autoupdate disabled while in anaglyph
+			renderer.shadowMapPlugin.update( scene, camera );//update only with 'real' camera values; autoupdate disabled while in anaglyph
 		}
 		
 		_cameraL.matrixWorld.copy( camera.matrixWorld ).multiply( eyeLeft );
@@ -161,6 +196,13 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 		_cameraL.near = camera.near;
 		_cameraL.far = camera.far;
 
+		//
+		if( aoSupported && aoEnabled ) {
+			scene.overrideMaterial = depthMaterial;
+			renderer.render( scene, _cameraL, _depthTargetL, true );
+			scene.overrideMaterial = null;
+		}
+		
 		renderer.render( scene, _cameraL, _renderTargetL, true );
 
 		_cameraR.matrixWorld.copy( camera.matrixWorld ).multiply( eyeRight );
@@ -168,15 +210,29 @@ NUMIDIUM.AnaglyphEffect = function ( renderer, width, height ) {
 		_cameraR.near = camera.near;
 		_cameraR.far = camera.far;
 
+		//
+		if( aoSupported && aoEnabled ) {
+			scene.overrideMaterial = depthMaterial;
+			renderer.render( scene, _cameraR, _depthTargetR, true );
+			scene.overrideMaterial = null;
+		}
+		
 		renderer.render( scene, _cameraR, _renderTargetR, true );
 
-		renderer.render( _scene, _camera );
+		if( aoSupported && aoEnabled ) {
+			_eC.render();
+		}
+		else {
+			renderer.render( _scene, _camera );
+		}
 		renderer.shadowMapAutoUpdate = isShadowMappingEnabled;//restore original setting for renderer shadow mapping
 	};
 
 	this.dispose = function() {
 		if ( _renderTargetL ) _renderTargetL.dispose();
 		if ( _renderTargetR ) _renderTargetR.dispose();
+		if ( _depthTargetL ) _depthTargetL.dispose();
+		if ( _depthTargetR ) _depthTargetR.dispose();
 	}
 
 };
