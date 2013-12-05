@@ -25,6 +25,7 @@ NUMIDIUM.OculusRiftEffect = function ( renderer, camera, options ) {
 		chromaAbParameter: [ 0.996, -0.004, 1.014, 0.0]
 	};
 
+	
 	// Perspective camera
 	var pCamera = camera;
 	
@@ -153,7 +154,12 @@ NUMIDIUM.OculusRiftEffect = function ( renderer, camera, options ) {
 
 		renderer.setSize( width, height );
 	};
-
+	
+	// testing of interpupillaryDistance
+	this.setInterpurpillaryDist = function ( n ){
+		HMD.interpupillaryDistance = HMD.interpupillaryDistance + n;
+	};
+	
 	this.render = function ( scene, camera ) {
 		var cc = renderer.getClearColor().clone();
 
