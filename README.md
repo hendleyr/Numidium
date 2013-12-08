@@ -2,6 +2,18 @@ Numidium
 ========
 Oculus Rift capstone project feat. Ger Her, Derek Ison, Richard Hendley, Tommy Grelecki
 
+Special thanks to:
+- Ricardo "Mr.Doob" Cabello
+- https://github.com/mrdoob/three.js
+- http://www.mrdoob.com/
+
+- http://alteredqualia.com/
+
+- Per-Olov Jernberg
+- https://github.com/possan/oculus-rest
+- http://possan.se/
+
+
 Copyright (c) 2013 Tommy Grelecki, Richard Hendley, Ger Her, Derek Ison
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
