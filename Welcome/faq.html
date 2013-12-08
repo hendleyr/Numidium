@@ -35,7 +35,6 @@
          
          <!-- Left Nav Section -->
          <ul class="left">
-		   <li><a href="about.html">About</a></li>
            <li><a href="blog.html">Blog</a></li>
            <li><a href="faq.html">FAQ</a></li>
          </ul>
@@ -50,41 +49,47 @@
 	        <h1> Frequently Asked Questions </h1>
 			<p></p>
 			<h4 class="subheader" > We've tried to address any issues that you may run into while configuring your Oculus Rift<tm>&trade;</tm> for the best experience possible. </h4>
-			<h3 class="subheader" >   If there is something that we didn't cover, send us <a href="mailto:help@uwmoculus.com?Subject=UWM%20Oculus%20Questions" target="_top">an email.</a>  </h3>
+			<h3 class="subheader" >   If there is something that we didn't cover, send us an email at  <a href="mailto:help@uwmoculus.com?Subject=UWM%20Oculus%20Questions" target="_top">help@uwmoculus.com</a>. </h3>
       	</div>
       </div>
 	</div>
-	
+
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q1" class="large-12 columns">
 	    <h2> Which operating systems can I use?</h2>
-		<p> The application should work for any operating system with a WebGL-enabled web browser, specifically Google Chrome.</p>
+		  <div id="a1">
+			<p> The application should work for any operating system with a WebGL-enabled web browser, specifically Google Chrome.</p>
+		  </div>
 	  </div>
     </div>
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q2" class="large-12 columns">
 	    <h2> Which web browsers can I use?</h2>
-		<p> At the time of development, Google Chrome is the only we browser that provides reliable results for all components of the scene.</p>
-	    <p> Google Chrome can be downloaded for free <a href="http://www.google.com">here</a>.</p>
+		  <div id="a2">
+			<p> At the time of development, Google Chrome is the only we browser that provides reliable results for all components of the scene.</p>
+			<p> Google Chrome can be downloaded for free <a href="http://www.google.com">here</a>.</p>
+		  </div>
 	  </div>
     </div>
 
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q3" class="large-12 columns">
 	    <h2> Why won't my movement work?</h2>
-		<p></p>
-		<h3>Hardware Configuration</h3>
-		<p> Ensure that your Oculus Rift<tm>&trade;</tm> HMD is: </p>
-		<ul>
-			<li> Plugged into a power supply and powered on. </li>
-			<li> Connected to your PC via HDMI or DVI. </li>
-			<li> Connected to your PC via a USB cord. </li>		
-		</ul>
-		<h3>Software Configuration</h3>
-		<p>In order for your Oculus Rift<tm>&trade;</tm> HMD to communicate your head movements to your PC you will need additional software. We recommend oculus-rest, which can be downloaded for free <a href="https://github.com/possan/oculus-rest">here</a>.</p>
-		<p> For more information about setting up oculus-rest, see <a href="blog/HowToInstallOculusRest.html">How To Install Oculus-Rest</a>.</p>
+		  <div id="a3">
+			<p></p>
+			<h3>Hardware Configuration</h3>
+			<p> Ensure that your Oculus Rift<tm>&trade;</tm> HMD is: </p>
+			<ul>
+				<li> Plugged into a power supply and powered on. </li>
+				<li> Connected to your PC via HDMI or DVI. </li>
+				<li> Connected to your PC via a USB cord. </li>		
+			</ul>
+			<h3>Software Configuration</h3>
+			<p>In order for your Oculus Rift<tm>&trade;</tm> HMD to communicate your head movements to your PC you will need additional software. We recommend oculus-rest, which can be downloaded for free <a href="https://github.com/possan/oculus-rest">here</a>.</p>
+			<p> For more information about setting up oculus-rest, see <a href="blog/HowToInstallOculusRest.html">How To Install Oculus-Rest</a>.</p>
+		  </div>
 	  </div>
     </div>	
 		<!--
@@ -103,6 +108,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+	<script src="js/fade_questions.js"></script>
 	
     <script>
       $(document).foundation();

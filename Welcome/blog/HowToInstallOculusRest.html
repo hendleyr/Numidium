@@ -15,7 +15,7 @@
     <nav class="top-bar" data-topbar>
        <ul class="title-area">
          <li class="name">
-         <h1><a href="index.html">Home</a></h1>
+         <h1><a href="../index.html">Home</a></h1>
          </li>
        </ul>
        
@@ -23,19 +23,18 @@
          <!-- Right Nav Section -->
          <ul class="right">
            <li class="active"><a href="../_firelinkShrine.html">Start Exploring!</a></li>
-           <li class="has-dropdown">
+           <!-- <li class="has-dropdown">
              <a href="#">Select Quality</a>
              <ul class="dropdown">
 		   <li><a href="../../_firelinkShrine.html">Normal Quality Shadows</a></li>
            <li><a href="../../_firelinkShrineHi.html">High Quality Shadows</a></li>
            <li><a href="../../_ssaoShadowMapTest.html">SSAO Shadow Mapped</a></li>
-             </ul>
+             </ul>-->
            </li>
          </ul>
          
          <!-- Left Nav Section -->
          <ul class="left">
-		   <li><a href="../about.html">About</a></li>
            <li><a href="../blog.html">Blog</a></li>
            <li><a href="../faq.html">FAQ</a></li>
          </ul>
@@ -54,40 +53,59 @@
 			<h4 class="subheader" >   To download or find out more, check out the oculus-rest repository on <a href="https://github.com/possan/oculus-rest">GitHub</a>.</h4>
       	</div>
       </div>
-	</div>
-	
-	
+	</div>	
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q1" class="large-12 columns">
 	    <h2> Download</h2>
-		<p> Download oculus-rest here: <a href="https://github.com/possan/oculus-rest">github.com/possan/oculus-rest</a>.</p>
+		  <div id="a1">
+			<p> Download oculus-rest here: <a href="https://github.com/possan/oculus-rest">github.com/possan/oculus-rest</a>.</p>
+		  </div>
 	  </div>
     </div>
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q2" class="large-12 columns">
 	    <h2>Locate Files</h2>
-		<p> Navigate to the directory containing the oculus-rest project.</p>
+		  <div id="a2">
+			<p> Navigate to the directory containing the oculus-rest project.</p>
+			<img src="../img/oculusRestBin.JPG" alt="Oculus Rest bin directory" width="786" height="608">
+		  </div>
 	  </div>
     </div>
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q3" class="large-12 columns">
 	    <h2>Run</h2>
-		<p> Run the provided executable for your operating system. </p>
+		  <div id="a3">
+			<p> Run the provided executable for your operating system. You must have the Oculus Rift&trade; connected to your computer via USB before running this application. </p>
+			<img src="../img/oculusRestIdle.JPG" alt="Oculus Rest Idle" width="786" height="608">
+		  </div>
+	  </div>
+    </div>
+
+	<div class="row">
+      <div id="q4"class="large-12 columns">
+	    <h2>Run Application</h2>		
+		  <div id="a4">
+			<p> Run the intended application. Data will start to be send between the oculus rest application and your HMD to provide head tracking.</p>
+			<img src="../img/oculusRestBusy.JPG" alt="Oculus Rest Busy" width="786" height="608">
+		  </div>
 	  </div>
     </div>
 	
 	<div class="row">
-      <div class="large-12 columns">
+      <div id="q5 "class="large-12 columns">
 	    <h2>...But that didn't work!</h2>
-		<p> The GitHub repository also includes project files for Visual Studio(Windows) or XCode(OSX) so that you can build and run the files locally. </p>
+		  <div id="a5">
+			<p> The GitHub repository also includes project files for Visual Studio(Windows) or XCode(OSX) so that you can build and run the files locally. </p>
+		  </div>
 	  </div>
     </div>
   
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+	<script src="../js/fade_questions.js"></script>
 	
     <script>
       $(document).foundation();
