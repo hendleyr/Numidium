@@ -81,6 +81,8 @@
 				ESCAPE = Pause, M = Mute/Unmute Audio
 				<br />
 				I / O / P = Anaglyph / Oculus / Projection Views				
+				<br />				
+				Help Menu = H
 				
 				<br />
 				<br />
@@ -358,11 +360,11 @@
 			};
 			function loadGeometry() {
 				var loader = new THREE.OBJMTLLoader();
-				loader.load( 'models/medieval_city/a6.obj', 'models/medieval_city/a6.mtl', function ( object ) {
+				loader.load( 'models/medieval_city/a8.obj', 'models/medieval_city/a8.mtl', function ( object ) {
 					object.scale.set( 10, 10, 10 );
 					collisionMesh = object;
 					collisionMesh.scale = new THREE.Vector3( 10, 10, 10 );
-					
+					collisionMesh.children[469].visible = false;
 					
 						scene.add( collisionMesh );
 						
@@ -404,6 +406,7 @@
 				oculusControls = new NUMIDIUM.OculusControls( camera );
 				kbamControls = new NUMIDIUM.NumidiumControls( camera );				
 				//kbamControls.getObject().position.set( 591, -150, -524 );
+				
 				kbamControls.getObject().position.set(534.5581117630347
 															 ,410.5
 															 ,22.546609271090336);

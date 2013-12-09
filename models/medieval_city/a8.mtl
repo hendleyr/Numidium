@@ -1,0 +1,6578 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 07.12.2013 19:42:11
+
+newmtl Street
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\courtyard_floor_3.jpg
+	map_Kd texture\courtyard_floor_3.jpg
+
+newmtl Chipped
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.66 0.54 0.44
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Chipped.bmp
+	map_Kd texture\Chipped.bmp
+
+newmtl CourtYardTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\courtyard_floor_1.jpg
+	map_Kd texture\courtyard_floor_1.jpg
+
+newmtl CourtYardTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\courtyard_floor_4.jpg
+	map_Kd texture\courtyard_floor_4.jpg
+
+newmtl CourtYardTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\courtyard_floor_2.jpg
+	map_Kd texture\courtyard_floor_2.jpg
+
+newmtl roofs_plankTexturing_PlankTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v5.png
+	map_Kd texture\Plank_v5.png
+
+newmtl roofs_plankTexturing_PlankTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v1.png
+	map_Kd texture\Plank_v1.png
+
+newmtl plankTexturing_PlankTexturing_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v8.png
+	map_Kd texture\Plank_v8.png
+
+newmtl plankTexturing_PlankTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v4.png
+	map_Kd texture\Plank_v4.png
+
+newmtl plankTexturing_PlankTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v10.png
+	map_Kd texture\Plank_v10.png
+
+newmtl plankTexturing_PlankTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v2.png
+	map_Kd texture\Plank_v2.png
+
+newmtl landscape_VeggieFieldTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\veggieField_4.jpg
+	map_Kd texture\veggieField_4.jpg
+
+newmtl landscape_Green
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\field_2.jpg
+	map_Kd texture\field_2.jpg
+
+newmtl Green_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\field_4.jpg
+	map_Kd texture\field_4.jpg
+
+newmtl WindowLowLODTexturing_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_10.png
+	map_Kd texture\winFrame_10.png
+
+newmtl WindowLowLODTexturing_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_5.png
+	map_Kd texture\winFrame_5.png
+
+newmtl lambert444SG
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\bench_3_v1.png
+	map_Kd texture\bench_3_v1.png
+
+newmtl WindowLowLODTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_8.png
+	map_Kd texture\winFrame_8.png
+
+newmtl WindowLowLODTexturing_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_4.png
+	map_Kd texture\winFrame_4.png
+
+newmtl WindowLowLODTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_1.png
+	map_Kd texture\winFrame_1.png
+
+newmtl WindowLowLODTexturing_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_3.png
+	map_Kd texture\winFrame_3.png
+
+newmtl WindowLowLODTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_6.png
+	map_Kd texture\winFrame_6.png
+
+newmtl Wall_32
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v1.jpg
+	map_Kd texture\wood_low_1_v1.jpg
+
+newmtl BlockTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sandstone_5.jpg
+	map_Kd texture\sandstone_5.jpg
+
+newmtl roofs_RoofSurface_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v3.jpg
+	map_Kd texture\roofType_2_v3.jpg
+
+newmtl Wall_176
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v1.jpg
+	map_Kd texture\wood_low_1_v1.jpg
+
+newmtl Door_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_9.png
+	map_Kd texture\door_low_9.png
+
+newmtl PutSignOrLamp_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_5.png
+	map_Kd texture\sign_5.png
+
+newmtl Door_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_3.png
+	map_Kd texture\door_low_3.png
+
+newmtl roofs_ChimneyTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v10.png
+	map_Kd texture\chimneyTex_v10.png
+
+newmtl plankTexturing_PlankTexturing_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_1.png
+	map_Kd texture\plankTop_1.png
+
+newmtl roofs_RoofSurface_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v3.jpg
+	map_Kd texture\roofType_2_v3.jpg
+
+newmtl roofs_FlatRoofTexturing_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_15.png
+	map_Kd texture\flatRoof_15.png
+
+newmtl roofs_FlatRoofTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_5.png
+	map_Kd texture\flatRoof_5.png
+
+newmtl roofs_FlatRoofTexturing_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_14.png
+	map_Kd texture\flatRoof_14.png
+
+newmtl roofs_FlatRoofTexturing_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_6.png
+	map_Kd texture\flatRoof_6.png
+
+newmtl roofs_FlatRoofTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_13.png
+	map_Kd texture\flatRoof_13.png
+
+newmtl roofs_FlatRoofTexturing_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_11.png
+	map_Kd texture\flatRoof_11.png
+
+newmtl roofs_FlatRoofTexturing_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_12.png
+	map_Kd texture\flatRoof_12.png
+
+newmtl roofs_FlatRoofTexturing_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_4.png
+	map_Kd texture\flatRoof_4.png
+
+newmtl roofs_FlatRoofTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_1.png
+	map_Kd texture\flatRoof_1.png
+
+newmtl roofs_plankTexturing_PlankTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v6.png
+	map_Kd texture\Plank_v6.png
+
+newmtl plankTexturing_PlankTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v9.png
+	map_Kd texture\Plank_v9.png
+
+newmtl plankTexturing_PlankTexturing_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v3.png
+	map_Kd texture\Plank_v3.png
+
+newmtl roofs_plankTexturing_PlankTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v7.png
+	map_Kd texture\Plank_v7.png
+
+newmtl landscape_VeggieFieldTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\veggieField_2.jpg
+	map_Kd texture\veggieField_2.jpg
+
+newmtl Green
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\field_1.jpg
+	map_Kd texture\field_1.jpg
+
+newmtl Green_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\field_3.jpg
+	map_Kd texture\field_3.jpg
+
+newmtl Wall_82
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v4.jpg
+	map_Kd texture\wood_low_4_v4.jpg
+
+newmtl ShuttersMoved_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_9.png
+	map_Kd texture\shutter_low_9.png
+
+newmtl WindowLowLODTexturing_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_7.png
+	map_Kd texture\winFrame_7.png
+
+newmtl roofs_RoofSurface_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v1.jpg
+	map_Kd texture\roofType_3_v1.jpg
+
+newmtl WindowLowLODTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_11.png
+	map_Kd texture\winFrame_11.png
+
+newmtl lambert441SG
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\bench_2_v1.png
+	map_Kd texture\bench_2_v1.png
+
+newmtl WindowLowLODTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_2.png
+	map_Kd texture\winFrame_2.png
+
+newmtl Door_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_1.png
+	map_Kd texture\door_low_1.png
+
+newmtl roofs_ChimneyTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v8.png
+	map_Kd texture\chimneyTex_v8.png
+
+newmtl roofs_ChimneyTexturing_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v6.png
+	map_Kd texture\chimneyTex_v6.png
+
+newmtl roofs_FlatRoofTexturing_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_8.png
+	map_Kd texture\flatRoof_8.png
+
+newmtl roofs_FlatRoofTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_9.png
+	map_Kd texture\flatRoof_9.png
+
+newmtl roofs_FlatRoofTexturing_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_2.png
+	map_Kd texture\flatRoof_2.png
+
+newmtl roofs_FlatRoofTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_3.png
+	map_Kd texture\flatRoof_3.png
+
+newmtl BlockTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sandstone_1.jpg
+	map_Kd texture\sandstone_1.jpg
+
+newmtl CourtYardTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\courtyard_floor_3.jpg
+	map_Kd texture\courtyard_floor_3.jpg
+
+newmtl Wall_34
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v4.jpg
+	map_Kd texture\wood_low_3_v4.jpg
+
+newmtl ShuttersMoved
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_3.png
+	map_Kd texture\shutter_low_3.png
+
+newmtl roofs_RoofSurface_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v4.jpg
+	map_Kd texture\roofType_2_v4.jpg
+
+newmtl WindowLowLODTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\winFrame_9.png
+	map_Kd texture\winFrame_9.png
+
+newmtl lambert448SG
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\bench_4_v1.png
+	map_Kd texture\bench_4_v1.png
+
+newmtl initialShadingGroup1
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\horsePole.jpg
+	map_Kd texture\horsePole.jpg
+
+newmtl PutSignOrLamp_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_1.png
+	map_Kd texture\sign_1.png
+
+newmtl Door_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_2.png
+	map_Kd texture\door_low_2.png
+
+newmtl Door_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_7.png
+	map_Kd texture\door_low_7.png
+
+newmtl roofs_FlatRoofTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_7.png
+	map_Kd texture\flatRoof_7.png
+
+newmtl BlockTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sandstone_3.jpg
+	map_Kd texture\sandstone_3.jpg
+
+newmtl ShuttersMoved_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_2.png
+	map_Kd texture\shutter_low_2.png
+
+newmtl Wall_42
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v5.jpg
+	map_Kd texture\wood_low_3_v5.jpg
+
+newmtl roofs_RoofSurface_26
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v1.jpg
+	map_Kd texture\roofType_2_v1.jpg
+
+newmtl Wall_65
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v5.jpg
+	map_Kd texture\wood_low_3_v5.jpg
+
+newmtl PutSignOrLamp_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_2.png
+	map_Kd texture\sign_2.png
+
+newmtl Door_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_4.png
+	map_Kd texture\door_low_4.png
+
+newmtl roofs_ChimneyTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v3.png
+	map_Kd texture\chimneyTex_v3.png
+
+newmtl roofs_RoofSurface_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v1.jpg
+	map_Kd texture\roofType_2_v1.jpg
+
+newmtl SidewalkMainTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\StoneFloor_2.jpg
+	map_Kd texture\StoneFloor_2.jpg
+
+newmtl Wall_72
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v5.jpg
+	map_Kd texture\framework_low_1_v5.jpg
+
+newmtl roofs_RoofSurface_21
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v3.jpg
+	map_Kd texture\roofType_3_v3.jpg
+
+newmtl Wall_79
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v5.jpg
+	map_Kd texture\framework_low_1_v5.jpg
+
+newmtl PutSignOrLamp_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_3.png
+	map_Kd texture\sign_3.png
+
+newmtl roofs_RoofSurface_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v3.jpg
+	map_Kd texture\roofType_3_v3.jpg
+
+newmtl Wall_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v1.jpg
+	map_Kd texture\stone_high_1_v1.jpg
+
+newmtl roofs_FlatRoofTexturing_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\flatRoof_10.png
+	map_Kd texture\flatRoof_10.png
+
+newmtl lambert2SG
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\woodHackTex.jpg
+	map_Kd texture\woodHackTex.jpg
+
+newmtl SideOrnament_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v1.jpg
+	map_Kd texture\stone_low_3_v1.jpg
+
+newmtl roofs_RoofSurface_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v4.jpg
+	map_Kd texture\roofType_3_v4.jpg
+
+newmtl Wall_88
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v1.jpg
+	map_Kd texture\stone_high_4_v1.jpg
+
+newmtl SideOrnament_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v5.jpg
+	map_Kd texture\stone_low_2_v5.jpg
+
+newmtl ShuttersMoved_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_10.png
+	map_Kd texture\shutter_low_10.png
+
+newmtl roofs_RoofSurface_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v2.jpg
+	map_Kd texture\roofType_3_v2.jpg
+
+newmtl Door_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_8.png
+	map_Kd texture\door_low_8.png
+
+newmtl ShuttersMoved_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_4.png
+	map_Kd texture\shutter_low_4.png
+
+newmtl Wall_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v4.jpg
+	map_Kd texture\wood_low_1_v4.jpg
+
+newmtl roofs_RoofSurface_24
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v1.jpg
+	map_Kd texture\roofType_3_v1.jpg
+
+newmtl Wall_74
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v4.jpg
+	map_Kd texture\wood_low_1_v4.jpg
+
+newmtl Door_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_11.png
+	map_Kd texture\door_low_11.png
+
+newmtl roofs_ChimneyTexturing_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v2.png
+	map_Kd texture\chimneyTex_v2.png
+
+newmtl BalconyRailingSurface_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\balconyRailing_2.png
+	map_Kd texture\balconyRailing_2.png
+
+newmtl Wall_21
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v2.jpg
+	map_Kd texture\wood_low_2_v2.jpg
+
+newmtl ShuttersMoved_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_6.png
+	map_Kd texture\shutter_low_6.png
+
+newmtl Door_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_6.png
+	map_Kd texture\door_low_6.png
+
+newmtl roofs_ChimneyTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v9.png
+	map_Kd texture\chimneyTex_v9.png
+
+newmtl initialShadingGroup
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\barrelTex.jpg
+	map_Kd texture\barrelTex.jpg
+
+newmtl Wall_26
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v3.jpg
+	map_Kd texture\wood_low_2_v3.jpg
+
+newmtl roofs_RoofSurface_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v2.jpg
+	map_Kd texture\roofType_1_v2.jpg
+
+newmtl Wall_27
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v3.jpg
+	map_Kd texture\wood_low_2_v3.jpg
+
+newmtl plankTexturing_PlankTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_3.png
+	map_Kd texture\plankTop_3.png
+
+newmtl roofs_RoofSurface_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v2.jpg
+	map_Kd texture\roofType_1_v2.jpg
+
+newmtl Door_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_5.png
+	map_Kd texture\door_low_5.png
+
+newmtl roofs_RoofSurface_23
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v5.jpg
+	map_Kd texture\roofType_1_v5.jpg
+
+newmtl Wall_83
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v4.jpg
+	map_Kd texture\wood_low_4_v4.jpg
+
+newmtl plankTexturing_PlankTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_2.png
+	map_Kd texture\plankTop_2.png
+
+newmtl roofs_RoofSurface_22
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v5.jpg
+	map_Kd texture\roofType_1_v5.jpg
+
+newmtl Wall_75
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v1.jpg
+	map_Kd texture\wood_low_3_v1.jpg
+
+newmtl ShuttersMoved_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_8.png
+	map_Kd texture\shutter_low_8.png
+
+newmtl roofs_RoofSurface_25
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v1.jpg
+	map_Kd texture\roofType_1_v1.jpg
+
+newmtl PutSignOrLamp_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_6.png
+	map_Kd texture\sign_6.png
+
+newmtl Wall_73
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v5.jpg
+	map_Kd texture\wood_low_4_v5.jpg
+
+newmtl BlockTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sandstone_2.jpg
+	map_Kd texture\sandstone_2.jpg
+
+newmtl Wall_96
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v3.jpg
+	map_Kd texture\framework_low_2_v3.jpg
+
+newmtl Wall_171
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v3.jpg
+	map_Kd texture\framework_low_2_v3.jpg
+
+newmtl roofs_Gate_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\gate_1.png
+	map_Kd texture\gate_1.png
+
+newmtl Wall_175
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v5.jpg
+	map_Kd texture\framework_low_3_v5.jpg
+
+newmtl roofs_ChimneyTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v1.png
+	map_Kd texture\chimneyTex_v1.png
+
+newmtl roofs_RoofSurface_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v5.jpg
+	map_Kd texture\roofType_2_v5.jpg
+
+newmtl Wall_62
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v3.jpg
+	map_Kd texture\stone_low_2_v3.jpg
+
+newmtl roofs_ChimneyTexturing_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v4.png
+	map_Kd texture\chimneyTex_v4.png
+
+newmtl Door_19
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_10.png
+	map_Kd texture\door_low_10.png
+
+newmtl plankTexturing_PlankTexturing_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_2.png
+	map_Kd texture\plankTop_2.png
+
+newmtl plankTexturing_PlankTexturing_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_1.png
+	map_Kd texture\plankTop_1.png
+
+newmtl plankTexturing_PlankTexturing_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plankTop_3.png
+	map_Kd texture\plankTop_3.png
+
+newmtl ShuttersMoved_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_1.png
+	map_Kd texture\shutter_low_1.png
+
+newmtl Wall_39
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v1.jpg
+	map_Kd texture\framework_low_1_v1.jpg
+
+newmtl BlockTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sandstone_4.jpg
+	map_Kd texture\sandstone_4.jpg
+
+newmtl PutSignOrLamp
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\sign_4.png
+	map_Kd texture\sign_4.png
+
+newmtl ShuttersMoved_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_5.png
+	map_Kd texture\shutter_low_5.png
+
+newmtl Wall_50
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v5.jpg
+	map_Kd texture\wood_low_2_v5.jpg
+
+newmtl roofs_ChimneyTexturing_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v5.png
+	map_Kd texture\chimneyTex_v5.png
+
+newmtl roofs_ChimneyTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\chimneyTex_v7.png
+	map_Kd texture\chimneyTex_v7.png
+
+newmtl roofs_RoofSurface_27
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v2.jpg
+	map_Kd texture\roofType_2_v2.jpg
+
+newmtl Wall_76
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v1.jpg
+	map_Kd texture\wood_low_3_v1.jpg
+
+newmtl roofs_RoofSurface_20
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v2.jpg
+	map_Kd texture\roofType_2_v2.jpg
+
+newmtl Wall_55
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v4.jpg
+	map_Kd texture\stone_low_2_v4.jpg
+
+newmtl Wall_174
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v4.jpg
+	map_Kd texture\stone_low_2_v4.jpg
+
+newmtl Wall_40
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v1.jpg
+	map_Kd texture\plaster_low_1_v1.jpg
+
+newmtl ShuttersMoved_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_7.png
+	map_Kd texture\shutter_low_7.png
+
+newmtl SideOrnament_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v5.jpg
+	map_Kd texture\stone_low_4_v5.jpg
+
+newmtl ShuttersMoved_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_low_11.png
+	map_Kd texture\shutter_low_11.png
+
+newmtl Wall_100
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v4.jpg
+	map_Kd texture\wood_low_2_v4.jpg
+
+newmtl roofs_RoofSurface_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v4.jpg
+	map_Kd texture\roofType_1_v4.jpg
+
+newmtl roofs_RoofSurface_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v3.jpg
+	map_Kd texture\roofType_1_v3.jpg
+
+newmtl Wall_52
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v4.jpg
+	map_Kd texture\wood_low_3_v4.jpg
+
+newmtl roofs_RoofSurface
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v3.jpg
+	map_Kd texture\roofType_1_v3.jpg
+
+newmtl SideOrnament_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v1.jpg
+	map_Kd texture\stone_low_2_v1.jpg
+
+newmtl roofs_RoofSurface_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v5.jpg
+	map_Kd texture\roofType_3_v5.jpg
+
+newmtl roofs_RoofSurface_19
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v5.jpg
+	map_Kd texture\roofType_3_v5.jpg
+
+newmtl Wall_29
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v2.jpg
+	map_Kd texture\wood_low_2_v2.jpg
+
+newmtl SideOrnament_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v2.jpg
+	map_Kd texture\stone_low_3_v2.jpg
+
+newmtl roofs_RoofSurface_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v2.jpg
+	map_Kd texture\roofType_3_v2.jpg
+
+newmtl Wall_59
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v2.jpg
+	map_Kd texture\stone_low_3_v2.jpg
+
+newmtl SideOrnament_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v5.jpg
+	map_Kd texture\stone_high_4_v5.jpg
+
+newmtl Wall_172
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v5.jpg
+	map_Kd texture\framework_low_2_v5.jpg
+
+newmtl Wall_173
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v5.jpg
+	map_Kd texture\framework_low_2_v5.jpg
+
+newmtl Wall_80
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v2.jpg
+	map_Kd texture\framework_low_1_v2.jpg
+
+newmtl Wall_90
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v2.jpg
+	map_Kd texture\stone_low_1_v2.jpg
+
+newmtl SideOrnament_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v3.jpg
+	map_Kd texture\stone_high_4_v3.jpg
+
+newmtl Wall_126
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v2.jpg
+	map_Kd texture\plaster_low_3_v2.jpg
+
+newmtl Wall_56
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v1.jpg
+	map_Kd texture\plaster_low_3_v1.jpg
+
+newmtl Wall_19
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v3.jpg
+	map_Kd texture\wood_low_4_v3.jpg
+
+newmtl roofs_RoofSurface_29
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v5.jpg
+	map_Kd texture\roofType_2_v5.jpg
+
+newmtl Wall_20
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v3.jpg
+	map_Kd texture\wood_low_4_v3.jpg
+
+newmtl Wall_97
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v4.jpg
+	map_Kd texture\plaster_low_3_v4.jpg
+
+newmtl Wall_127
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v4.jpg
+	map_Kd texture\stone_high_2_v4.jpg
+
+newmtl Wall_46
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v1.jpg
+	map_Kd texture\wood_low_4_v1.jpg
+
+newmtl Wall_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v3.jpg
+	map_Kd texture\wood_low_3_v3.jpg
+
+newmtl BalconyRailingSurface
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\balconyRailing_1.png
+	map_Kd texture\balconyRailing_1.png
+
+newmtl SideOrnament
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v4.jpg
+	map_Kd texture\stone_low_3_v4.jpg
+
+newmtl Wall_63
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v2.jpg
+	map_Kd texture\wood_low_3_v2.jpg
+
+newmtl Wall_64
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v2.jpg
+	map_Kd texture\wood_low_3_v2.jpg
+
+newmtl Wall_31
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v2.jpg
+	map_Kd texture\framework_low_3_v2.jpg
+
+newmtl Wall_142
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v4.jpg
+	map_Kd texture\framework_low_3_v4.jpg
+
+newmtl Wall_28
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v1.jpg
+	map_Kd texture\wood_low_2_v1.jpg
+
+newmtl Wall_61
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v3.jpg
+	map_Kd texture\stone_low_4_v3.jpg
+
+newmtl Wall_167
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v3.jpg
+	map_Kd texture\stone_low_4_v3.jpg
+
+newmtl Wall_104
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v1.jpg
+	map_Kd texture\stone_low_4_v1.jpg
+
+newmtl roofs_RoofSurface_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v4.jpg
+	map_Kd texture\roofType_1_v4.jpg
+
+newmtl Wall_99
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v1.jpg
+	map_Kd texture\stone_low_3_v1.jpg
+
+newmtl roofs_RoofSurface_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_3_v4.jpg
+	map_Kd texture\roofType_3_v4.jpg
+
+newmtl Wall_169
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v1.jpg
+	map_Kd texture\framework_low_3_v1.jpg
+
+newmtl Wall_170
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v1.jpg
+	map_Kd texture\framework_low_3_v1.jpg
+
+newmtl SidewalkStoneTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stoneColor.png
+	map_Kd texture\stoneColor.png
+
+newmtl PlaceLampAsset
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_7.png
+	map_Kd texture\streetLamp_7.png
+
+newmtl StoneStepTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\StoneFloor_1.jpg
+	map_Kd texture\StoneFloor_1.jpg
+
+newmtl PlaceLampAsset_4
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_3.png
+	map_Kd texture\streetLamp_3.png
+
+newmtl VeggieFieldTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\veggieField_3.jpg
+	map_Kd texture\veggieField_3.jpg
+
+newmtl VeggieFieldTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\veggieField_1.jpg
+	map_Kd texture\veggieField_1.jpg
+
+newmtl landscape_VeggieFieldTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\veggieField_5.jpg
+	map_Kd texture\veggieField_5.jpg
+
+newmtl CityEngineMaterial
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+
+newmtl SideOrnament_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v3.jpg
+	map_Kd texture\stone_low_1_v3.jpg
+
+newmtl Wall_168
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v3.jpg
+	map_Kd texture\stone_low_1_v3.jpg
+
+newmtl Wall_147
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v4.jpg
+	map_Kd texture\framework_high_2_v4.jpg
+
+newmtl Door
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_2.png
+	map_Kd texture\door_high_2.png
+
+newmtl Door_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_5.png
+	map_Kd texture\door_high_5.png
+
+newmtl Wall_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v5.jpg
+	map_Kd texture\stone_high_1_v5.jpg
+
+newmtl Wall_150
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v5.jpg
+	map_Kd texture\plaster_high_2_v5.jpg
+
+newmtl Door_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_1.png
+	map_Kd texture\door_high_1.png
+
+newmtl Door_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_7.png
+	map_Kd texture\door_high_7.png
+
+newmtl Wall_33
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v4.jpg
+	map_Kd texture\stone_low_4_v4.jpg
+
+newmtl Wall_139
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v4.jpg
+	map_Kd texture\plaster_high_2_v4.jpg
+
+newmtl roofs_RoofSurface_28
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_1_v1.jpg
+	map_Kd texture\roofType_1_v1.jpg
+
+newmtl Wall_140
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v4.jpg
+	map_Kd texture\plaster_high_2_v4.jpg
+
+newmtl Door_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_4.png
+	map_Kd texture\door_high_4.png
+
+newmtl Door_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_3.png
+	map_Kd texture\door_high_3.png
+
+newmtl Wall_159
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v4.jpg
+	map_Kd texture\framework_high_3_v4.jpg
+
+newmtl Wall_160
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v4.jpg
+	map_Kd texture\framework_high_3_v4.jpg
+
+newmtl Door_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_8.png
+	map_Kd texture\door_high_8.png
+
+newmtl SideOrnament_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v2.jpg
+	map_Kd texture\stone_high_2_v2.jpg
+
+newmtl SideOrnament_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v1.jpg
+	map_Kd texture\stone_high_2_v1.jpg
+
+newmtl Wall_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v1.jpg
+	map_Kd texture\stone_high_2_v1.jpg
+
+newmtl Door_20
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_6.png
+	map_Kd texture\door_high_6.png
+
+newmtl Door_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_9.png
+	map_Kd texture\door_high_9.png
+
+newmtl Door_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_high_10.png
+	map_Kd texture\door_high_10.png
+
+newmtl Wall_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v1.jpg
+	map_Kd texture\stone_high_3_v1.jpg
+
+newmtl Wall_109
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v4.jpg
+	map_Kd texture\framework_low_1_v4.jpg
+
+newmtl Wall_120
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v4.jpg
+	map_Kd texture\framework_low_1_v4.jpg
+
+newmtl Wall_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v4.jpg
+	map_Kd texture\plaster_low_2_v4.jpg
+
+newmtl Wall_166
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v1.jpg
+	map_Kd texture\framework_low_2_v1.jpg
+
+newmtl Wall_165
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v4.jpg
+	map_Kd texture\stone_low_3_v4.jpg
+
+newmtl Wall_51
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v3.jpg
+	map_Kd texture\wood_low_1_v3.jpg
+
+newmtl roofs_RoofSurface_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\roofType_2_v4.jpg
+	map_Kd texture\roofType_2_v4.jpg
+
+newmtl Wall_108
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v3.jpg
+	map_Kd texture\wood_low_1_v3.jpg
+
+newmtl ShuttersMoved_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_high_6.png
+	map_Kd texture\shutter_high_6.png
+
+newmtl Wall_134
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v3.jpg
+	map_Kd texture\framework_high_2_v3.jpg
+
+newmtl plankTexturing_PlankTexturing_50
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_3.jpg
+	map_Kd texture\constr_plank_low_3.jpg
+
+newmtl plankTexturing_PlankTexturing_47
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_1.jpg
+	map_Kd texture\constr_plank_low_1.jpg
+
+newmtl plankTexturing_PlankTexturing_42
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_9.jpg
+	map_Kd texture\constr_plank_low_9.jpg
+
+newmtl plankTexturing_PlankTexturing_41
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_11.jpg
+	map_Kd texture\constr_plank_low_11.jpg
+
+newmtl plankTexturing_PlankTexturing_45
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_4.jpg
+	map_Kd texture\constr_plank_low_4.jpg
+
+newmtl plankTexturing_PlankTexturing_49
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_2.jpg
+	map_Kd texture\constr_plank_low_2.jpg
+
+newmtl plankTexturing_PlankTexturing_43
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_10.jpg
+	map_Kd texture\constr_plank_low_10.jpg
+
+newmtl plankTexturing_PlankTexturing_51
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_7.jpg
+	map_Kd texture\constr_plank_low_7.jpg
+
+newmtl plankTexturing_PlankTexturing_46
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_5.jpg
+	map_Kd texture\constr_plank_low_5.jpg
+
+newmtl plankTexturing_PlankTexturing_44
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_6.jpg
+	map_Kd texture\constr_plank_low_6.jpg
+
+newmtl plankTexturing_PlankTexturing_48
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\constr_plank_low_8.jpg
+	map_Kd texture\constr_plank_low_8.jpg
+
+newmtl raehmli_1
+	Ns 18.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.50 0.50 0.50
+	Ke 0.00 0.00 0.00
+	map_Ka texture\frameTexture_2.png
+	map_Kd texture\frameTexture_2.png
+
+newmtl glesli_8
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_1.png
+	map_Kd texture\interior_1.png
+
+newmtl glesli_9
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_10.png
+	map_Kd texture\interior_10.png
+
+newmtl raehmli_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\frameTexture_2.png
+	map_Kd texture\frameTexture_2.png
+
+newmtl glesli_7
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_5.png
+	map_Kd texture\interior_5.png
+
+newmtl glesli_19
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_15.png
+	map_Kd texture\interior_15.png
+
+newmtl glesli_6
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_2.png
+	map_Kd texture\interior_2.png
+
+newmtl glesli_15
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_19.png
+	map_Kd texture\interior_19.png
+
+newmtl glesli_16
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_14.png
+	map_Kd texture\interior_14.png
+
+newmtl glesli_12
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_11.png
+	map_Kd texture\interior_11.png
+
+newmtl glesli_17
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_4.png
+	map_Kd texture\interior_4.png
+
+newmtl glesli_2
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_16.png
+	map_Kd texture\interior_16.png
+
+newmtl glesli_13
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_3.png
+	map_Kd texture\interior_3.png
+
+newmtl glesli_3
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_9.png
+	map_Kd texture\interior_9.png
+
+newmtl glesli_4
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_17.png
+	map_Kd texture\interior_17.png
+
+newmtl glesli
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_20.png
+	map_Kd texture\interior_20.png
+
+newmtl glesli_10
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_12.png
+	map_Kd texture\interior_12.png
+
+newmtl glesli_14
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_13.png
+	map_Kd texture\interior_13.png
+
+newmtl glesli_1
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_6.png
+	map_Kd texture\interior_6.png
+
+newmtl glesli_18
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_8.png
+	map_Kd texture\interior_8.png
+
+newmtl glesli_11
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_18.png
+	map_Kd texture\interior_18.png
+
+newmtl plankTexturing_PlankTexturing_22
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v4.png
+	map_Kd texture\Plank_v4.png
+
+newmtl plankTexturing_PlankTexturing_24
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v8.png
+	map_Kd texture\Plank_v8.png
+
+newmtl plankTexturing_PlankTexturing_28
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v10.png
+	map_Kd texture\Plank_v10.png
+
+newmtl plankTexturing_PlankTexturing_30
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v1.png
+	map_Kd texture\Plank_v1.png
+
+newmtl Wall_135
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v3.jpg
+	map_Kd texture\framework_high_2_v3.jpg
+
+newmtl plankTexturing_PlankTexturing_27
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v2.png
+	map_Kd texture\Plank_v2.png
+
+newmtl plankTexturing_PlankTexturing_25
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v7.png
+	map_Kd texture\Plank_v7.png
+
+newmtl plankTexturing_PlankTexturing_29
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v9.png
+	map_Kd texture\Plank_v9.png
+
+newmtl plankTexturing_PlankTexturing_26
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v3.png
+	map_Kd texture\Plank_v3.png
+
+newmtl plankTexturing_PlankTexturing_23
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v6.png
+	map_Kd texture\Plank_v6.png
+
+newmtl Wall_84
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v3.jpg
+	map_Kd texture\framework_high_1_v3.jpg
+
+newmtl Wall_163
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v5.jpg
+	map_Kd texture\plaster_high_1_v5.jpg
+
+newmtl Wall_164
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v5.jpg
+	map_Kd texture\plaster_high_1_v5.jpg
+
+newmtl SideOrnament_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v5.jpg
+	map_Kd texture\stone_low_3_v5.jpg
+
+newmtl Wall_115
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v5.jpg
+	map_Kd texture\framework_high_2_v5.jpg
+
+newmtl Wall_116
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v5.jpg
+	map_Kd texture\framework_high_2_v5.jpg
+
+newmtl SideOrnament_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v4.jpg
+	map_Kd texture\stone_high_3_v4.jpg
+
+newmtl Wall_148
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v4.jpg
+	map_Kd texture\stone_high_3_v4.jpg
+
+newmtl Sidewalk
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\rock_1.jpg
+	map_Kd texture\rock_1.jpg
+
+newmtl OuterWallVerticalTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v2.jpg
+	map_Kd texture\OuterWallTexture_v2.jpg
+
+newmtl OuterWallVerticalTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v3.jpg
+	map_Kd texture\OuterWallTexture_v3.jpg
+
+newmtl OuterWallHorizontalTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v1.jpg
+	map_Kd texture\OuterWallTexture_v1.jpg
+
+newmtl StoneStepTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\StoneFloor_1.jpg
+	map_Kd texture\StoneFloor_1.jpg
+
+newmtl OuterWallVerticalTexturing_2
+	Ns 18.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.50 0.50 0.50
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v2.jpg
+	map_Kd texture\OuterWallTexture_v2.jpg
+
+newmtl OuterWallHorizontalTexturing_2
+	Ns 18.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.50 0.50 0.50
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v1.jpg
+	map_Kd texture\OuterWallTexture_v1.jpg
+
+newmtl OuterWallHorizontalTexturing_1
+	Ns 18.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.50 0.50 0.50
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v3.jpg
+	map_Kd texture\OuterWallTexture_v3.jpg
+
+newmtl PlaceLampAsset_7
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_5.png
+	map_Kd texture\streetLamp_5.png
+
+newmtl PlaceLampAsset_9
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_9.png
+	map_Kd texture\streetLamp_9.png
+
+newmtl PlaceLampAsset_1
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_2.png
+	map_Kd texture\streetLamp_2.png
+
+newmtl plankTexturing_PlankTexturing_39
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v8.png
+	map_Kd texture\Plank_nailed_v8.png
+
+newmtl plankTexturing_PlankTexturing_40
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v6.png
+	map_Kd texture\Plank_nailed_v6.png
+
+newmtl plankTexturing_PlankTexturing_35
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v7.png
+	map_Kd texture\Plank_nailed_v7.png
+
+newmtl plankTexturing_PlankTexturing_36
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v2.png
+	map_Kd texture\Plank_nailed_v2.png
+
+newmtl plankTexturing_PlankTexturing_33
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v10.png
+	map_Kd texture\Plank_nailed_v10.png
+
+newmtl plankTexturing_PlankTexturing_31
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v9.png
+	map_Kd texture\Plank_nailed_v9.png
+
+newmtl plankTexturing_PlankTexturing_32
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v5.png
+	map_Kd texture\Plank_nailed_v5.png
+
+newmtl plankTexturing_PlankTexturing_37
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v1.png
+	map_Kd texture\Plank_nailed_v1.png
+
+newmtl plankTexturing_PlankTexturing_38
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v4.png
+	map_Kd texture\Plank_nailed_v4.png
+
+newmtl plankTexturing_PlankTexturing_34
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v3.png
+	map_Kd texture\Plank_nailed_v3.png
+
+newmtl PlaceLampAsset_6
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_8.png
+	map_Kd texture\streetLamp_8.png
+
+newmtl PlaceLampAsset_8
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_1.png
+	map_Kd texture\streetLamp_1.png
+
+newmtl PlaceLampAsset_5
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_6.png
+	map_Kd texture\streetLamp_6.png
+
+newmtl PlaceLampAsset_2
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_10.png
+	map_Kd texture\streetLamp_10.png
+
+newmtl Wall_22
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v2.jpg
+	map_Kd texture\stone_high_3_v2.jpg
+
+newmtl Wall_130
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v5.jpg
+	map_Kd texture\stone_high_3_v5.jpg
+
+newmtl Wall_136
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v5.jpg
+	map_Kd texture\stone_high_3_v5.jpg
+
+newmtl SideOrnament_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v3.jpg
+	map_Kd texture\stone_high_2_v3.jpg
+
+newmtl Wall_144
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v5.jpg
+	map_Kd texture\stone_high_2_v5.jpg
+
+newmtl Wall_151
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v1.jpg
+	map_Kd texture\framework_high_3_v1.jpg
+
+newmtl Wall_128
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v4.jpg
+	map_Kd texture\stone_high_1_v4.jpg
+
+newmtl Wall_131
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v4.jpg
+	map_Kd texture\stone_high_1_v4.jpg
+
+newmtl Wall_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v3.jpg
+	map_Kd texture\stone_high_1_v3.jpg
+
+newmtl Wall_132
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v1.jpg
+	map_Kd texture\wood_low_2_v1.jpg
+
+newmtl Wall_25
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v4.jpg
+	map_Kd texture\stone_high_4_v4.jpg
+
+newmtl Wall_162
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v3.jpg
+	map_Kd texture\stone_high_4_v3.jpg
+
+newmtl Wall_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v2.jpg
+	map_Kd texture\framework_high_3_v2.jpg
+
+newmtl Wall_149
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v2.jpg
+	map_Kd texture\framework_high_3_v2.jpg
+
+newmtl Wall_133
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v5.jpg
+	map_Kd texture\stone_high_4_v5.jpg
+
+newmtl Wall_66
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v3.jpg
+	map_Kd texture\stone_high_3_v3.jpg
+
+newmtl Wall_161
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v3.jpg
+	map_Kd texture\stone_high_3_v3.jpg
+
+newmtl BalconyRailingSurface_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\balconyRailing_3.png
+	map_Kd texture\balconyRailing_3.png
+
+newmtl Wall_114
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v4.jpg
+	map_Kd texture\stone_high_4_v4.jpg
+
+newmtl roofs_Gate_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\gate_2.png
+	map_Kd texture\gate_2.png
+
+newmtl Wall_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v1.jpg
+	map_Kd texture\plaster_high_1_v1.jpg
+
+newmtl Wall_138
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v1.jpg
+	map_Kd texture\plaster_high_1_v1.jpg
+
+newmtl Wall_92
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v1.jpg
+	map_Kd texture\framework_high_1_v1.jpg
+
+newmtl Wall_129
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v1.jpg
+	map_Kd texture\framework_high_1_v1.jpg
+
+newmtl Wall_43
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v5.jpg
+	map_Kd texture\wood_low_1_v5.jpg
+
+newmtl Wall_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v3.jpg
+	map_Kd texture\plaster_high_1_v3.jpg
+
+newmtl Wall_94
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v3.jpg
+	map_Kd texture\framework_high_3_v3.jpg
+
+newmtl Wall_95
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v3.jpg
+	map_Kd texture\framework_high_3_v3.jpg
+
+newmtl Wall_85
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v2.jpg
+	map_Kd texture\plaster_high_2_v2.jpg
+
+newmtl Wall_86
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v2.jpg
+	map_Kd texture\plaster_high_2_v2.jpg
+
+newmtl raehmli
+	Ns 18.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.50 0.50 0.50
+	Ke 0.00 0.00 0.00
+	map_Ka texture\frameTexture_1.png
+	map_Kd texture\frameTexture_1.png
+
+newmtl glesli_5
+	Ns 20.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 3.00 3.00 3.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\interior_7.png
+	map_Kd texture\interior_7.png
+
+newmtl ShuttersMoved_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_high_7.png
+	map_Kd texture\shutter_high_7.png
+
+newmtl Wall_122
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v4.jpg
+	map_Kd texture\framework_high_1_v4.jpg
+
+newmtl ShuttersMoved_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_high_1.png
+	map_Kd texture\shutter_high_1.png
+
+newmtl Wall_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v5.jpg
+	map_Kd texture\stone_high_1_v5.jpg
+
+newmtl Wall_158
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v4.jpg
+	map_Kd texture\stone_high_2_v4.jpg
+
+newmtl Wall_89
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v1.jpg
+	map_Kd texture\stone_high_4_v1.jpg
+
+newmtl ShuttersMoved_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\shutter_high_5.png
+	map_Kd texture\shutter_high_5.png
+
+newmtl roofs_plankTexturing_PlankTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_v5.png
+	map_Kd texture\Plank_v5.png
+
+newmtl Wall_146
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v2.jpg
+	map_Kd texture\stone_high_2_v2.jpg
+
+newmtl plankTexturing_PlankTexturing_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v6.png
+	map_Kd texture\Plank_nailed_v6.png
+
+newmtl plankTexturing_PlankTexturing_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v4.png
+	map_Kd texture\Plank_nailed_v4.png
+
+newmtl plankTexturing_PlankTexturing_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v5.png
+	map_Kd texture\Plank_nailed_v5.png
+
+newmtl plankTexturing_PlankTexturing_20
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v2.png
+	map_Kd texture\Plank_nailed_v2.png
+
+newmtl plankTexturing_PlankTexturing_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v7.png
+	map_Kd texture\Plank_nailed_v7.png
+
+newmtl plankTexturing_PlankTexturing_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v3.png
+	map_Kd texture\Plank_nailed_v3.png
+
+newmtl plankTexturing_PlankTexturing_19
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v8.png
+	map_Kd texture\Plank_nailed_v8.png
+
+newmtl GuardDoor_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_5.png
+	map_Kd texture\door_low_5.png
+
+newmtl GuardDoor_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_1.png
+	map_Kd texture\door_low_1.png
+
+newmtl OuterWallVerticalTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v1.jpg
+	map_Kd texture\OuterWallTexture_v1.jpg
+
+newmtl OuterWallVerticalTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v3.jpg
+	map_Kd texture\OuterWallTexture_v3.jpg
+
+newmtl OuterWallVerticalTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\OuterWallTexture_v2.jpg
+	map_Kd texture\OuterWallTexture_v2.jpg
+
+newmtl PlaceLampAsset_3
+	Ns 1.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.30 0.30 0.30
+	Ke 0.00 0.00 0.00
+	map_Ka texture\streetLamp_4.png
+	map_Kd texture\streetLamp_4.png
+
+newmtl plankTexturing_PlankTexturing_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v9.png
+	map_Kd texture\Plank_nailed_v9.png
+
+newmtl plankTexturing_PlankTexturing_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v1.png
+	map_Kd texture\Plank_nailed_v1.png
+
+newmtl plankTexturing_PlankTexturing_21
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\Plank_nailed_v10.png
+	map_Kd texture\Plank_nailed_v10.png
+
+newmtl GuardDoor_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_6.png
+	map_Kd texture\door_low_6.png
+
+newmtl GuardDoor_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_3.png
+	map_Kd texture\door_low_3.png
+
+newmtl GuardDoor_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_4.png
+	map_Kd texture\door_low_4.png
+
+newmtl GuardDoor_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_11.png
+	map_Kd texture\door_low_11.png
+
+newmtl GuardDoor
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\door_low_8.png
+	map_Kd texture\door_low_8.png
+
+newmtl WallSegmentTexturing_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v2.jpg
+	map_Kd texture\stone_low_2_v2.jpg
+
+newmtl WallSegmentTexturing_1
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v2.jpg
+	map_Kd texture\stone_low_3_v2.jpg
+
+newmtl WallSegmentTexturing_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v5.jpg
+	map_Kd texture\stone_low_2_v5.jpg
+
+newmtl WallSegmentTexturing_8
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v1.jpg
+	map_Kd texture\stone_low_3_v1.jpg
+
+newmtl WallSegmentTexturing_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v4.jpg
+	map_Kd texture\stone_low_2_v4.jpg
+
+newmtl WallSegmentTexturing_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v3.jpg
+	map_Kd texture\stone_low_2_v3.jpg
+
+newmtl WallSegmentTexturing_6
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v5.jpg
+	map_Kd texture\stone_low_4_v5.jpg
+
+newmtl WallSegmentTexturing_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v3.jpg
+	map_Kd texture\stone_low_3_v3.jpg
+
+newmtl WallSegmentTexturing_10
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v4.jpg
+	map_Kd texture\stone_low_4_v4.jpg
+
+newmtl WallSegmentTexturing_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v3.jpg
+	map_Kd texture\stone_low_4_v3.jpg
+
+newmtl WallSegmentTexturing_12
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v4.jpg
+	map_Kd texture\stone_low_1_v4.jpg
+
+newmtl WallSegmentTexturing
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v3.jpg
+	map_Kd texture\stone_low_1_v3.jpg
+
+newmtl WallSegmentTexturing_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v1.jpg
+	map_Kd texture\stone_low_2_v1.jpg
+
+newmtl WallSegmentTexturing_18
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v1.jpg
+	map_Kd texture\stone_low_4_v1.jpg
+
+newmtl WallSegmentTexturing_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v5.jpg
+	map_Kd texture\stone_low_1_v5.jpg
+
+newmtl WallSegmentTexturing_11
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v4.jpg
+	map_Kd texture\stone_low_3_v4.jpg
+
+newmtl WallSegmentTexturing_14
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v2.jpg
+	map_Kd texture\stone_low_4_v2.jpg
+
+newmtl LotAligned
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\rock_1.jpg
+	map_Kd texture\rock_1.jpg
+
+newmtl Wall_67
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v5.jpg
+	map_Kd texture\framework_high_1_v5.jpg
+
+newmtl Wall_157
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_3_v1.jpg
+	map_Kd texture\framework_high_3_v1.jpg
+
+newmtl Wall_156
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v4.jpg
+	map_Kd texture\framework_high_2_v4.jpg
+
+newmtl Wall_154
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v3.jpg
+	map_Kd texture\plaster_low_3_v3.jpg
+
+newmtl Wall_155
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v3.jpg
+	map_Kd texture\plaster_low_3_v3.jpg
+
+newmtl Wall_153
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v2.jpg
+	map_Kd texture\plaster_high_1_v2.jpg
+
+newmtl Wall_152
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v5.jpg
+	map_Kd texture\stone_high_2_v5.jpg
+
+newmtl Wall_69
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_3_v1.jpg
+	map_Kd texture\stone_high_3_v1.jpg
+
+newmtl SideOrnament_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v2.jpg
+	map_Kd texture\stone_high_1_v2.jpg
+
+newmtl Wall_145
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v2.jpg
+	map_Kd texture\stone_high_1_v2.jpg
+
+newmtl Wall_93
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v1.jpg
+	map_Kd texture\stone_high_1_v1.jpg
+
+newmtl Wall_143
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_3_v4.jpg
+	map_Kd texture\framework_low_3_v4.jpg
+
+newmtl roofs_Gate_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\gate_5.png
+	map_Kd texture\gate_5.png
+
+newmtl Wall_141
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v1.jpg
+	map_Kd texture\plaster_low_3_v1.jpg
+
+newmtl Wall_137
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v5.jpg
+	map_Kd texture\plaster_low_2_v5.jpg
+
+newmtl WallSegmentTexturing_4
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v1.jpg
+	map_Kd texture\stone_low_1_v1.jpg
+
+newmtl WallSegmentTexturing_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v5.jpg
+	map_Kd texture\stone_low_3_v5.jpg
+
+newmtl Wall_111
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v5.jpg
+	map_Kd texture\stone_low_2_v5.jpg
+
+newmtl Wall_17
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_1_v3.jpg
+	map_Kd texture\stone_high_1_v3.jpg
+
+newmtl Wall
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v1.jpg
+	map_Kd texture\plaster_high_2_v1.jpg
+
+newmtl SideOrnament_16
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_3_v3.jpg
+	map_Kd texture\stone_low_3_v3.jpg
+
+newmtl Wall_125
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v1.jpg
+	map_Kd texture\stone_low_2_v1.jpg
+
+newmtl Wall_123
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v4.jpg
+	map_Kd texture\plaster_high_1_v4.jpg
+
+newmtl Wall_124
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v4.jpg
+	map_Kd texture\plaster_high_1_v4.jpg
+
+newmtl Wall_23
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v2.jpg
+	map_Kd texture\stone_high_4_v2.jpg
+
+newmtl Wall_24
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_4_v2.jpg
+	map_Kd texture\stone_high_4_v2.jpg
+
+newmtl Wall_121
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v1.jpg
+	map_Kd texture\wood_low_4_v1.jpg
+
+newmtl Wall_112
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v2.jpg
+	map_Kd texture\plaster_low_2_v2.jpg
+
+newmtl Wall_57
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v3.jpg
+	map_Kd texture\framework_low_1_v3.jpg
+
+newmtl Wall_37
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v2.jpg
+	map_Kd texture\wood_low_1_v2.jpg
+
+newmtl Wall_38
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v2.jpg
+	map_Kd texture\wood_low_1_v2.jpg
+
+newmtl Wall_119
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v4.jpg
+	map_Kd texture\wood_low_2_v4.jpg
+
+newmtl Wall_118
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_high_2_v3.jpg
+	map_Kd texture\stone_high_2_v3.jpg
+
+newmtl Wall_78
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v2.jpg
+	map_Kd texture\framework_low_2_v2.jpg
+
+newmtl Wall_117
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v2.jpg
+	map_Kd texture\framework_low_2_v2.jpg
+
+newmtl Wall_70
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v2.jpg
+	map_Kd texture\framework_high_2_v2.jpg
+
+newmtl Wall_71
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_2_v2.jpg
+	map_Kd texture\framework_high_2_v2.jpg
+
+newmtl Wall_113
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v2.jpg
+	map_Kd texture\plaster_low_2_v2.jpg
+
+newmtl Wall_47
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v5.jpg
+	map_Kd texture\stone_low_4_v5.jpg
+
+newmtl Wall_13
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_3_v3.jpg
+	map_Kd texture\wood_low_3_v3.jpg
+
+newmtl Wall_98
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v4.jpg
+	map_Kd texture\plaster_low_3_v4.jpg
+
+newmtl SideOrnament_5
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v2.jpg
+	map_Kd texture\stone_low_4_v2.jpg
+
+newmtl Wall_53
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_1_v5.jpg
+	map_Kd texture\wood_low_1_v5.jpg
+
+newmtl Wall_54
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v4.jpg
+	map_Kd texture\framework_low_2_v4.jpg
+
+newmtl Wall_110
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_2_v4.jpg
+	map_Kd texture\framework_low_2_v4.jpg
+
+newmtl Wall_30
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v3.jpg
+	map_Kd texture\plaster_low_1_v3.jpg
+
+newmtl Wall_48
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v2.jpg
+	map_Kd texture\wood_low_4_v2.jpg
+
+newmtl Wall_41
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v1.jpg
+	map_Kd texture\plaster_low_1_v1.jpg
+
+newmtl Wall_107
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v4.jpg
+	map_Kd texture\stone_low_1_v4.jpg
+
+newmtl Wall_106
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_4_v5.jpg
+	map_Kd texture\wood_low_4_v5.jpg
+
+newmtl Wall_105
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_4_v1.jpg
+	map_Kd texture\stone_low_4_v1.jpg
+
+newmtl Wall_91
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v2.jpg
+	map_Kd texture\stone_low_1_v2.jpg
+
+newmtl SideOrnament_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v5.jpg
+	map_Kd texture\stone_low_1_v5.jpg
+
+newmtl Wall_103
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v5.jpg
+	map_Kd texture\stone_low_1_v5.jpg
+
+newmtl Wall_102
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_1_v1.jpg
+	map_Kd texture\stone_low_1_v1.jpg
+
+newmtl Wall_101
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v1.jpg
+	map_Kd texture\plaster_low_2_v1.jpg
+
+newmtl Wall_87
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\wood_low_2_v5.jpg
+	map_Kd texture\wood_low_2_v5.jpg
+
+newmtl Wall_81
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v3.jpg
+	map_Kd texture\stone_low_2_v3.jpg
+
+newmtl Wall_77
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_2_v3.jpg
+	map_Kd texture\plaster_low_2_v3.jpg
+
+newmtl Wall_68
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v5.jpg
+	map_Kd texture\framework_high_1_v5.jpg
+
+newmtl Wall_35
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v4.jpg
+	map_Kd texture\plaster_low_1_v4.jpg
+
+newmtl Wall_60
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v5.jpg
+	map_Kd texture\plaster_low_1_v5.jpg
+
+newmtl Wall_58
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_low_1_v3.jpg
+	map_Kd texture\framework_low_1_v3.jpg
+
+newmtl SideOrnament_7
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v2.jpg
+	map_Kd texture\stone_low_2_v2.jpg
+
+newmtl Wall_49
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\stone_low_2_v2.jpg
+	map_Kd texture\stone_low_2_v2.jpg
+
+newmtl roofs_Gate
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\gate_3.png
+	map_Kd texture\gate_3.png
+
+newmtl Wall_44
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v5.jpg
+	map_Kd texture\plaster_low_3_v5.jpg
+
+newmtl Wall_45
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_3_v5.jpg
+	map_Kd texture\plaster_low_3_v5.jpg
+
+newmtl Wall_36
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_low_1_v4.jpg
+	map_Kd texture\plaster_low_1_v4.jpg
+
+newmtl Wall_15
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_2_v1.jpg
+	map_Kd texture\plaster_high_2_v1.jpg
+
+newmtl Wall_9
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\plaster_high_1_v3.jpg
+	map_Kd texture\plaster_high_1_v3.jpg
+
+newmtl Wall_2
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v2.jpg
+	map_Kd texture\framework_high_1_v2.jpg
+
+newmtl Wall_3
+	Ns 0.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 0.00 0.00 0.00
+	Kd 0.50 0.50 0.50
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00
+	map_Ka texture\framework_high_1_v2.jpg
+	map_Kd texture\framework_high_1_v2.jpg
+
+newmtl Material__2
+	Ns 10.00
+	Ni 1.50
+	d 1.00
+	Tr 0.00
+	Tf 1.00 1.00 1.00 
+	illum 2
+	Ka 1.00 1.00 1.00
+	Kd 1.00 1.00 1.00
+	Ks 0.00 0.00 0.00
+	Ke 0.00 0.00 0.00

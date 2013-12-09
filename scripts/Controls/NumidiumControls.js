@@ -5,6 +5,10 @@
 
 NUMIDIUM.NumidiumControls = function ( camera ) {
 	var scope = this;
+
+	var helpMenuPositionBefore = new THREE.Vector3();
+	var inHelp = false;
+	
 	
 	var playerHeight = 12;	// keep player these units above ground (ie, player's eye-level) TODO: configurable...?
 	var playerBound = 6;	// keep player these units away from walls
@@ -58,7 +62,10 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	var onKeyDown = function ( event ) {
 		if (canJump === true) {
 			// disable movement input if midair
+			if(!inHelp)
+			{
 			switch ( event.keyCode ) {
+			
 				case 87: // W
 					moveForward = true;
 					break;
@@ -82,6 +89,37 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 					
 				default:
 					break;
+			}
+			}
+			if (event.keyCode == 72) // H
+			{
+					// move back to position
+					if	(collisionMesh.children[469].visible == true)
+					{
+						inHelp = false;
+						kbamControls.getObject().position.set(helpMenuPositionBefore.x,helpMenuPositionBefore.y,helpMenuPositionBefore.z);
+						
+						collisionMesh.children[469].visible = false;
+					}
+					
+					// move to help menu
+					else
+					{
+						inHelp = true;
+						collisionMesh.children[469].visible = true;
+						
+						helpMenuPositionBefore.set(kbamControls.getObject().position.x,kbamControls.getObject().position.y,kbamControls.getObject().position.z);
+						
+						kbamControls.getObject().position.set(534.5581117630347
+														,410.5
+														,22.546609271090336);												 
+						kbamControls.getObject().rotation.y = 1.0540000000000003;
+						kbamControls.getObject().quaternion.z = 0;
+						kbamControls.getObject().quaternion.x = 0;
+						kbamControls.getObject().quaternion.y = 0.5029426489776037;
+						kbamControls.getObject().quaternion.w = 0.8643197856345711;
+						
+					}							
 			}
 		}
 		
@@ -131,7 +169,7 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 	
 	this.update = function ( delta ) {
 		
-		delta *= 0.1;
+		delta *= 0.01;
 		if (Gamepad.supported) {
 			var pads = Gamepad.getStates();
 			var pad = pads[0]; // assume only 1 player.
@@ -209,18 +247,22 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 
 
 		if ( moveForward ) {
+			collisionMesh.children[469].visible = false;
 			velocity.z -= 0.06 * delta;
 			audio.play();
 		}
 		if ( moveBackward ) {
+			collisionMesh.children[469].visible = false;
 			velocity.z += 0.06 * delta;
 			audio.play();
 		}
 		if ( moveLeft ) {
+			collisionMesh.children[469].visible = false;
 			velocity.x -= 0.06 * delta;
 			audio.play();
 		}
 		if ( moveRight ) {
+			collisionMesh.children[469].visible = false;
 			velocity.x += 0.06 * delta;
 			audio.play();
 		}
@@ -251,6 +293,8 @@ NUMIDIUM.NumidiumControls = function ( camera ) {
 
 			yawObject.translateX( velocity.x );
 			yawObject.translateZ( velocity.z );
+			//collisionMesh.children[469].translateX(velocity.z);
+			//collisionMesh.children[469].translateZ(-velocity.x);
 			
 			// look down -- are we stepping up/down, falling down
 			yRaycaster.ray.origin = yawObject.position;
